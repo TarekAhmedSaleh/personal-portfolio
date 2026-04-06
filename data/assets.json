@@ -1,0 +1,171 @@
+﻿{
+    "90-avenue":  {
+                      "icon":  "icon.webp"
+                  },
+    "an-nasim":  {
+                     "icon":  "icon.webp"
+                 },
+    "bahr-el-baqar":  {
+                          "icon":  "icon.webp"
+                      },
+    "builder-works":  {
+                          "icon":  "icon.png"
+                      },
+    "buraydah-tabuk-treatment-plants":  {
+                                            "icon":  "icon.webp"
+                                        },
+    "celia":  {
+                  "icon":  "icon.webp",
+                  "screenshots":  [
+                                      "1.webp"
+                                  ]
+              },
+    "crs-manager":  {
+                        "icon":  "icon.png",
+                        "screenshots":  [
+                                            "1.png",
+                                            "2.png",
+                                            "3.png",
+                                            "4.png",
+                                            "5.png",
+                                            "6.png"
+                                        ]
+                    },
+    "cruise-terminal-area-development":  {
+                                             "icon":  "icon.webp"
+                                         },
+    "docs-archive":  {
+                         "icon":  "icon.png"
+                     },
+    "docs-uploader":  {
+                          "icon":  "icon.png"
+                      },
+    "docu-forge":  {
+                       "icon":  "icon.png"
+                   },
+    "elsewedy-busway":  {
+                            "icon":  "icon.webp"
+                        },
+    "golf-porto-cairo":  {
+                             "icon":  "icon.webp",
+                             "screenshots":  [
+                                                 "1.webp"
+                                             ]
+                         },
+    "log-manager":  {
+                        "icon":  "icon.webp"
+                    },
+    "madinaty-b08":  {
+                         "icon":  "icon.webp"
+                     },
+    "poe":  {
+                "icon":  "icon.png",
+                "screenshots":  [
+                                    "1.png",
+                                    "2.png",
+                                    "3.png"
+                                ]
+            },
+    "porto-phoenice":  {
+                           "icon":  "icon.webp"
+                       },
+    "saudi-landbridge-rail-line":  {
+                                       "icon":  "icon.webp"
+                                   },
+    "ta-auto-points":  {
+                           "icon":  "icon.png",
+                           "screenshots":  [
+                                               "1.png",
+                                               "2.png",
+                                               "3.png",
+                                               "4.png",
+                                               "5.png",
+                                               "6.png",
+                                               "7.png",
+                                               "8.png",
+                                               "9.png",
+                                               "10.png"
+                                           ]
+                       },
+    "ta-elevation-inspector":  {
+                                   "icon":  "icon.png",
+                                   "screenshots":  [
+                                                       "1.png",
+                                                       "2.png",
+                                                       "3.png",
+                                                       "4.png"
+                                                   ]
+                               },
+    "ta-roads-planner":  {
+                             "icon":  "icon.png",
+                             "screenshots":  [
+                                                 "1.png",
+                                                 "2.png",
+                                                 "3.png",
+                                                 "4.png",
+                                                 "5.png",
+                                                 "6.png",
+                                                 "7.png",
+                                                 "8.png",
+                                                 "9.png"
+                                             ]
+                         },
+    "ta-roads-toolkit":  {
+                             "icon":  "icon.png",
+                             "screenshots":  [
+                                                 "1.png",
+                                                 "2.png",
+                                                 "3.png",
+                                                 "4.png",
+                                                 "5.png",
+                                                 "6.png",
+                                                 "7.png",
+                                                 "8.png",
+                                                 "9.png",
+                                                 "10.png",
+                                                 "11.png",
+                                                 "12.png",
+                                                 "13.png",
+                                                 "14.png",
+                                                 "15.png",
+                                                 "16.png",
+                                                 "17.png",
+                                                 "18.png",
+                                                 "19.png",
+                                                 "20.png",
+                                                 "21.png",
+                                                 "22.png",
+                                                 "23.png",
+                                                 "24.png",
+                                                 "25.png"
+                                             ]
+                         },
+    "ta-sheets-generator":  {
+                                "icon":  "icon.png",
+                                "screenshots":  [
+                                                    "1.png",
+                                                    "2.png",
+                                                    "3.png"
+                                                ]
+                            },
+    "ta-solids-extractor":  {
+                                "icon":  "icon.png",
+                                "screenshots":  [
+                                                    "1.png",
+                                                    "2.png",
+                                                    "3.png",
+                                                    "4.png",
+                                                    "5.png",
+                                                    "6.png",
+                                                    "7.png",
+                                                    "8.png",
+                                                    "9.png",
+                                                    "10.png",
+                                                    "11.png",
+                                                    "12.png"
+                                                ]
+                            },
+    "tbc-schools":  {
+                        "icon":  "icon.webp"
+                    }
+}

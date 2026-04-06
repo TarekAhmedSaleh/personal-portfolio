@@ -1,0 +1,155 @@
+{
+  "experience": {
+    "positions": [
+      {
+        "companyName": "LTIMindtree",
+        "jobTitle": "Senior AEC Software Developer",
+        "startDate": "2024-01-01",
+        "isCurrent": true,
+        "location": "Riyadh, Saudi Arabia",
+        "description": "Currently deployed as a core member of the Central Development Unit (CDU) - Design Excellence for the Qiddiya gigaproject, driving digital transformation and enterprise system integration. Past engagements under LTIMindtree include developing Project Management Information System (PMIS) solutions for Qiddiya and delivering customized engineering automation workflows for Langan.",
+        "responsabilites": [
+          "Leading the architecture and development of enterprise-grade web platforms and automation tools to streamline complex engineering and digital delivery workflows.",
+          "Architecting seamless integrations between centralized project databases and AEC cloud ecosystems (including ACC and APS) to establish a unified, automated data environment.",
+          "Establishing technical standards and optimizing large-scale design review cycles to ensure high-quality project outputs across major client engagements.",
+          "Enhancing cross-disciplinary collaboration and significantly reducing manual engineering overhead by deploying scalable, custom software solutions."
+        ]
+      },
+      {
+        "companyName": "Kemet Corporation",
+        "jobTitle": "Senior BIM Developer",
+        "startDate": "2023-07-01",
+        "endDate": "2023-12-31",
+        "isCurrent": false,
+        "location": "Cairo, Egypt",
+        "description": "Creating innovative solutions in the AEC industry to streamline construction workflows and enhance project collaboration.",
+        "responsabilites": [
+          "Designing, developing, and maintaining software applications that support BIM workflows.",
+          "Collaborating with architects, engineers, project managers, and developers to align software solutions with project objectives and user needs.",
+          "Providing technical guidance and mentorship to team developers, ensuring their expertise in delivering high-quality products.",
+          "Researching and evaluating new technologies to improve BIM workflows."
+        ]
+      },
+      {
+        "companyName": "Kemet Corporation",
+        "jobTitle": "BIM Developer",
+        "startDate": "2022-01-01",
+        "endDate": "2023-06-30",
+        "isCurrent": false,
+        "location": "Cairo, Egypt",
+        "description": "Creating innovative solutions in the AEC industry to streamline construction workflows and enhance project collaboration.",
+        "responsabilites": [
+          "Developing plugins for AutoCAD, Civil3D, and Revit that enhance the functionality of these popular BIM software applications.",
+          "Creating web applications, desktop applications, and Windows services based on Forge API, a powerful set of cloud-based tools that enable the creation of custom software solutions for the engineering industry."
+        ]
+      },
+      {
+        "companyName": "Khatib & Alami",
+        "jobTitle": "BIM Roads Engineer | BIM Developer",
+        "startDate": "2021-03-01",
+        "endDate": "2021-12-31",
+        "isCurrent": false,
+        "location": "Cairo, Egypt",
+        "description": "As a BIM Roads Engineer, my key responsibilities included implementing the BIM workflow in the design process. Additionally, as a BIM Developer, I was responsible for creating software solutions to enhance the BIM workflow.",
+        "responsabilites": [
+          "Planning, designing, and grading urban sites.",
+          "Implementing BIM workflow in the design process.",
+          "Creating BIM models for urban sites and checking them for clashes in Navisworks.",
+          "Creating dynamo scripts to automate the design process.",
+          "Creating Civil3D subassemblies using subassembly composer.",
+          "Creating plugins for AutoCAD and Civil3D."
+        ]
+      },
+      {
+        "companyName": "Khatib & Alami",
+        "jobTitle": "Roads Engineer",
+        "startDate": "2020-04-01",
+        "endDate": "2021-02-28",
+        "isCurrent": false,
+        "location": "Cairo, Egypt",
+        "description": "In my role as a Roads Engineer, I was dedicated to planning and designing urban sites with a focus on functionality, safety, aesthetics, and compliance with construction standards.",
+        "responsabilites": [
+          "Planning and designing urban sites",
+          "Conducting rough and fine grading for roads and intersections",
+          "Calculating Bills of Quantities (BOQ)",
+          "Conducting vehicle tracking simulations"
+        ]
+      },
+      {
+        "companyName": "Al Amar Consulting Group",
+        "jobTitle": "Roads Engineer",
+        "startDate": "2019-01-01",
+        "endDate": "2020-03-31",
+        "isCurrent": false,
+        "location": "Cairo, Egypt",
+        "description": "As a Roads Engineer, I played a crucial role in the planning and designing of urban sites, ensuring that all projects were executed with a focus on functionality, safety, aesthetics, and adherence to construction standards",
+        "responsabilites": [
+          "Planning and designing urban sites",
+          "Calculating Bills of Quantities (BOQ)",
+          "Conducting vehicle tracking simulations",
+          "Preparing tender packages"
+        ]
+      }
+    ]
+  },
+  "courses": [
+    {
+      "topic": "Autodesk Civil 3D",
+      "titles": [
+        "Autodesk Civil 3D 2023 Essential Training - Eric Chappell",
+        "AutoCAD Civil 3D: Site Design - Eric Chappell",
+        "Civil 3D: Basic Roadway Design  - Eric Chappell",
+        "AutoCAD Civil 3D: Designing Residential Projects  - Eric Chappell",
+        "AutoCAD Civil 3D: Plan Production  - Katherine Ming"
+      ]
+    },
+    {
+      "topic": "Infraworks",
+      "titles": [
+        "InfraWorks Essential Training - Eric Chappell",
+        "Roadway Design: InfraWorks 360 - Eric Chappell"
+      ]
+    },
+    {
+      "topic": "C#",
+      "titles": [
+        "C# Basics for Beginners - Mosh Hamedani",
+        "C# Intermediate OOP - Mosh Hamedani",
+        "C# Advanced Topics  - Mosh Hamedani",
+        "C# Developers Double Your Coding Speed  - Mosh Hamedani",
+        "Clean Coding and Refactoring  - Mosh Hamedani"
+      ]
+    },
+    {
+      "topic": "SQL",
+      "titles": [
+        "Complete SQL Mastery - Mosh Hamedani"
+      ]
+    },
+    {
+      "topic": "Desktop Development",
+      "titles": [
+        "Windows Presentation Foundation (WPF) - Masterclass",
+        "WPF MVVM In Depth -  Brian Noyes"
+      ]
+    },
+    {
+      "topic": "Web Development",
+      "titles": [
+        "HTML,CSS,JS - Mosh Hamedani",
+        "Bootstrap 5 From Scratch  Build 5 Modern Websites - Brad Traversy",
+        "The Complete ASP.NET MVC 5 Course - Mosh Hamedani",
+        "Entity Framework in Depth - Mosh Hamedani"
+      ]
+    },
+    {
+      "topic": "Design Patterns and Algorithms",
+      "titles": [
+        "Mastering Design Patterns: Part 1 (Behavioral Design Patterns) - Mosh Hamedani",
+        "Mastering Design Patterns: Part 2 (Structural design Patterns) - Mosh Hamedani",
+        "Mastering Design Patterns: Part 3 (creational design Patterns) - Mosh Hamedani",
+        "The Ultimate Data Structures & Algorithms: Part 1 - Mosh Hamedani"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1519 @@
+[
+  {
+    "$type": "development",
+    "id": "a5b6c7d8-e9f0-1234-abcd-345678901225",
+    "name": "CRS Manager",
+    "slug": "crs-manager",
+    "projectType": "Development",
+    "shortDescription": "Centralized web application that integrates with Autodesk Construction Cloud (ACC) to digitize the Comment Resolution Sheet (CRS) process, automating issue fetching, resolution tracking, and approval workflows.",
+    "longDescription": "The Integrated ACC & CRS Digital Platform is a centralized web application designed to digitize the Comment Resolution Sheet (CRS) process. Operating as a Hybrid Aggregator, it bridges the gap between the technical design data stored in Autodesk Construction Cloud and the contractual negotiation lifecycle. The system implements a Master vs. Mirror pattern — ACC remains the Single Source of Truth for technical data while the CRS app manages the contractual lifecycle, approval statuses, and audit trails. Built on Blazor Server with APS integration, it automatically fetches project issues from ACC, eliminating manual data entry and ensuring data integrity across environments.",
+    "isFeatured": true,
+    "developmentProjectType": "Web",
+    "platform": "APSForge",
+    "metrics": {
+      "usersImpacted": "Qiddiya Design Review teams and external consultants",
+      "timeSaved": "Eliminates manual CRS creation and Excel formatting entirely",
+      "status": "In development",
+      "highlights": [
+        "Live link to ACC — fetches project issues on demand via APS",
+        "Master vs. Mirror architecture ensures data integrity across systems",
+        "Full audit trail for contractual accountability and traceability"
+      ]
+    },
+    "keyFeatures": [
+      {
+        "header": "ACC Integration via APS",
+        "points": [
+          "Authenticates with Autodesk Construction Cloud using 2-legged and 3-legged OAuth.",
+          "Fetches project issues directly from ACC, mapping key fields into the CRS database.",
+          "Manual sync function re-queries ACC and updates local status for externally changed items."
+        ],
+        "image": "assets/projects/general/integration.webp"
+      },
+      {
+        "header": "Dashboard & KPIs",
+        "points": [
+          "Visual landing page displaying real-time project metrics.",
+          "Breakdown by discipline to identify bottlenecks.",
+          "Live status tracking across all active CRS bundles."
+        ],
+        "image": "assets/projects/general/dataVisualization.webp"
+      },
+      {
+        "header": "CRS Workflow Engine",
+        "points": [
+          "Reviewers generate CRS bundles by selecting imported ACC issues and assigning consultants.",
+          "Smart Initiation rules handle Rev 0 vs Rev 1 logic and carry-over automatically.",
+          "Grid-based resolution interface for consultants to input responses."
+        ],
+        "image": "assets/projects/general/automation.webp"
+      },
+      {
+        "header": "Role-Based Access Control",
+        "points": [
+          "Distinguishes between Internal Reviewers with full edit/approval rights and External Consultants with response-only access.",
+          "Consultants can only view and interact with CRS bundles assigned to their company."
+        ],
+        "image": "assets/projects/general/auth.webp"
+      },
+      {
+        "header": "Review & Approval Cycle",
+        "points": [
+          "Reviewers evaluate consultant responses and toggle status to Closed or Open/Rejected.",
+          "Complete audit trail records who changed what and when for contractual accountability."
+        ],
+        "image": "assets/projects/general/tracking.webp"
+      },
+      {
+        "header": "Export Capabilities",
+        "points": [
+          "Export the finalized CRS grid with statuses and responses to formatted Excel or PDF.",
+          "Supports archival and offline distribution of resolution sheets."
+        ],
+        "image": "assets/projects/general/pdf.webp"
+      }
+    ],
+    "technologyStack": [
+      {
+        "name": ".NET"
+      },
+      {
+        "name": "C#"
+      },
+      {
+        "name": "ASP.NET Core"
+      },
+      {
+        "name": "Blazor Server"
+      },
+      {
+        "name": "Entity Framework Core"
+      },
+      {
+        "name": "SQL Server"
+      },
+      {
+        "name": "Azure"
+      },
+      {
+        "name": "SignalR"
+      },
+      {
+        "name": "APS APIs"
+      }
+    ]
+  },
+  {
+    "$type": "development",
+    "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567801",
+    "name": "TA Roads Toolkit",
+    "slug": "ta-roads-toolkit",
+    "projectType": "Development",
+    "shortDescription": "TA Roads Toolkit is a Civil3D® plugin that automates daily road design tasks, increasing productivity, reducing errors, and improving quality.",
+    "longDescription": "TA Roads Toolkit is a comprehensive Civil3D® solution designed to streamline and automate various tasks in road design, significantly enhancing productivity, reducing errors, and improving the overall quality of road designs. By automating repetitive and time-consuming tasks, TA Roads Toolkit enables engineers to focus on more critical aspects of their projects",
+    "downloadLink": "https://apps.autodesk.com/CIV3D/en/Detail/Index?id=1462232572425845205&appLang=en&os=Win64",
+    "isFeatured": true,
+    "developmentProjectType": "Plugin",
+    "platform": "Civil3D",
+    "featuredMediaElement": {
+      "url": "https://www.youtube.com/embed/NSPNPar_nzY",
+      "description": "This video is an overview of the plugin features showing you the plugin in action.",
+      "isYoutube": true
+    },
+    "metrics": {
+      "downloads": "500+",
+      "timeSaved": "~70% reduction in repetitive road design tasks",
+      "status": "Published on Autodesk App Store",
+      "highlights": [
+        "Automates 19+ Civil 3D workflows in a single plugin",
+        "Used across multiple large-scale infrastructure projects",
+        "4 major version releases with continuous feature expansion"
+      ]
+    },
+    "keyFeatures": [
+      {
+        "header": "Alignments creation from polylines",
+        "points": [
+          "This feature allows users to create alignments from polylines, with custom parameters such as alignment naming, layer, style, and label set style."
+        ],
+        "image": "assets/projects/ta-roads-toolkit/features/Alignment.png"
+      },
+      {
+        "header": "Alignments reverse",
+        "points": [
+          "This feature reverses the direction of all selected alignments."
+        ],
+        "image": "assets/projects/ta-roads-toolkit/features/Reverse.png"
+      },
+      {
+        "header": "Import alignments label set styles",
+        "points": [
+          "Save time by importing label set styles for all alignments in your project with just a single click."
+        ],
+        "image": "assets/projects/ta-roads-toolkit/features/AlignmentLabelSet.png"
+      },
+      {
+        "header": "Assign profiles to label groups",
+        "points": [
+          "Assign design profiles to all alignment labels seamlessly, reducing manual effort."
+        ],
+        "image": "assets/projects/ta-roads-toolkit/features/UpdateAlignmentLabel.png"
+      },
+      {
+        "header": "Surface profiles Creation",
+        "points": [
+          "Automatically create surface profiles for all alignments with customizable settings, saving engineers time on complex projects."
+        ],
+        "image": "assets/projects/ta-roads-toolkit/features/SurfaceProfile.png"
+      },
+      {
+        "header": "Design profiles Creation",
+        "points": [
+          "Automatically create design profiles for alignments from surface profiles, with PVIs matching the start and end elevations of the surface profile."
+        ],
+        "image": "assets/projects/ta-roads-toolkit/features/DesignProfile.png"
+      },
+      {
+        "header": "Update profile Styles",
+        "points": [
+          "Automatically update all needed profile styles and label set styles."
+        ],
+        "image": "assets/projects/ta-roads-toolkit/features/UpdateProfilesStyles.png"
+      },
+      {
+        "header": "Profile views Creation",
+        "points": [
+          "Automatically create profile views for alignments with customizable parameters and grid layout arrangements."
+        ],
+        "image": "assets/projects/ta-roads-toolkit/features/ProfileView.png"
+      },
+      {
+        "header": "Assign Profiles to Profile Views Data Bands",
+        "points": [
+          "Automatically assign profiles to data bands for all profile views."
+        ],
+        "image": "assets/projects/ta-roads-toolkit/features/UpdateProfileViewBands.png"
+      },
+      {
+        "header": "Corridors Creation",
+        "points": [
+          "Automatically create corridors for alignments with customizable parameters, using a layout profile with a user-specified keyword."
+        ],
+        "image": "assets/projects/ta-roads-toolkit/features/Corridor.png"
+      },
+      {
+        "header": "Corridors frequencies editor",
+        "points": [
+          "This feature allows users to edit the frequencies of all selected corridors."
+        ],
+        "image": "assets/projects/ta-roads-toolkit/features/EditCorridor.png"
+      },
+      {
+        "header": "Corridors Merger",
+        "points": [
+          "This feature allows users to merge multiple corridors into one single corridor."
+        ],
+        "image": "assets/projects/ta-roads-toolkit/features/MergeCorridors.png"
+      },
+      {
+        "header": "Corridors Surfaces Creation",
+        "points": [
+          "Create corridor surfaces with custom naming, layer, and style, and automatically add the outer boundary based on point codes and overhang corrections."
+        ],
+        "image": "assets/projects/ta-roads-toolkit/features/Surface.png"
+      },
+      {
+        "header": "Sample Lines Creation",
+        "points": [
+          "This feature allows users to automate the creation of sample lines for all selected alignments and add the relevant sources to each sample lines group."
+        ],
+        "image": "assets/projects/ta-roads-toolkit/features/SampleLines.png"
+      },
+      {
+        "header": "Intersections points table",
+        "points": [
+          "Detects all alignment intersections, checks intersecting profile elevations, and displays a comprehensive grid view of intersection points, highlighting valid and invalid ones."
+        ],
+        "image": "assets/projects/ta-roads-toolkit/features/IntersectionPointsTable.png"
+      },
+      {
+        "header": "Add Intersection COGO Points",
+        "points": [
+          "Automatically create intersection COGO points at valid intersection locations."
+        ],
+        "image": "assets/projects/ta-roads-toolkit/features/Point.png"
+      },
+      {
+        "header": "Add Intersection Labels",
+        "points": [
+          "Easily label intersection points to enhance clarity and detail in your designs."
+        ],
+        "image": "assets/projects/ta-roads-toolkit/features/LabelIntersections.png"
+      },
+      {
+        "header": "Mark Invalid Intersections",
+        "points": [
+          "Quickly identify and flag invalid intersection points for corrective action."
+        ],
+        "image": "assets/projects/ta-roads-toolkit/features/InvalidPoint.png"
+      },
+      {
+        "header": "Theme Editor",
+        "points": [
+          "This feature allows users to change application theme between light and dark in addition to changing the primary color."
+        ],
+        "image": "assets/projects/ta-roads-toolkit/features/ThemeEditor.png"
+      }
+    ],
+    "technologyStack": [
+      {
+        "name": ".NET"
+      },
+      {
+        "name": "C#"
+      },
+      {
+        "name": "WPF"
+      },
+      {
+        "name": "MVVM"
+      },
+      {
+        "name": "AutoCAD APIs"
+      },
+      {
+        "name": "Civil3D APIs"
+      }
+    ],
+    "videos": [
+      {
+        "url": "https://www.youtube.com/embed/HMxm-qxYB9Y",
+        "description": "This video showcasing the V4.0 updates",
+        "isYoutube": true
+      },
+      {
+        "url": "https://www.youtube.com/embed/YASdwkOekP4",
+        "description": "This video showcasing the V3.0 updates.",
+        "isYoutube": true
+      },
+      {
+        "url": "https://www.youtube.com/embed/NSPNPar_nzY",
+        "description": "This video showcasing the plugin features in action.",
+        "isYoutube": true
+      }
+    ]
+  },
+  {
+    "$type": "development",
+    "id": "b2c3d4e5-f6a7-8901-bcde-f12345678902",
+    "name": "TA Roads Planner",
+    "slug": "ta-roads-planner",
+    "projectType": "Development",
+    "shortDescription": "TA Roads Planner is an AutoCAD® plugin that streamlines planning roads and intersections in addition to drawing roads typical cross sections.",
+    "longDescription": "TA Roads Planner is a powerful AutoCAD® plugin that simplifies creating and editing road sections with a user-friendly interface. It enhances productivity, accuracy, and communication by allowing easy export and import of road sections across devices.",
+    "downloadLink": "https://apps.autodesk.com/ACD/en/Detail/Index?id=712452894971770186&appLang=en&os=Win32_64",
+    "isFeatured": false,
+    "developmentProjectType": "Plugin",
+    "platform": "AutoCAD",
+    "featuredMediaElement": {
+      "url": "https://www.youtube.com/embed/5vrN7oA7_xs",
+      "description": "This video is an overview of the plugin features showing you the plugin in action.",
+      "isYoutube": true
+    },
+    "keyFeatures": [
+      {
+        "header": "Road Section Editor",
+        "points": [
+          "Create and edit road sections with a visual interface ans store it into your library."
+        ],
+        "image": "assets/projects/ta-roads-planner/features/RoadSectionEditor.png"
+      },
+      {
+        "header": "Export and Import Sections",
+        "points": [
+          "Share your road sections with other devices to ensure seamless collaboration and access across different platforms."
+        ],
+        "image": "assets/projects/ta-roads-planner/features/Export.png"
+      },
+      {
+        "header": "Draw Roads and intersections",
+        "points": [
+          "Draw roads from polylines representing centerlines, including intersections, with customizable parameters, and add dimensions to the roads."
+        ],
+        "image": "assets/projects/ta-roads-planner/features/RoadPlanner.png"
+      },
+      {
+        "header": "Draw Typical Cross Sections",
+        "points": [
+          "Draw AutoCAD typical cross sections for all any section stored in your library."
+        ],
+        "image": "assets/projects/ta-roads-planner/features/RoadTypicalCrossSection.png"
+      },
+      {
+        "header": "Theme Editor",
+        "points": [
+          "This feature allows users to change application theme between light and dark in addition to changing the primary color."
+        ],
+        "image": "assets/projects/ta-roads-planner/features/ThemeEditor.png"
+      }
+    ],
+    "technologyStack": [
+      {
+        "name": ".NET"
+      },
+      {
+        "name": "C#"
+      },
+      {
+        "name": "WPF"
+      },
+      {
+        "name": "MVVM"
+      },
+      {
+        "name": "AutoCAD APIs"
+      }
+    ],
+    "videos": [
+      {
+        "url": "https://www.youtube.com/embed/5vrN7oA7_xs",
+        "description": "This video is an overview of the plugin features showing you the plugin in action.",
+        "isYoutube": true
+      }
+    ]
+  },
+  {
+    "$type": "development",
+    "id": "c3d4e5f6-a7b8-9012-cdef-123456789003",
+    "name": "Docs Uploader",
+    "slug": "docs-uploader",
+    "projectType": "Development",
+    "shortDescription": "Desktop application connects to Autodesk Construction Cloud (ACC) via Forge APIs to manage project data and bulk folder uploads.",
+    "longDescription": "Desktop application designed to streamline the process of accessing and manipulating project data stored in the Autodesk Construction Cloud (ACC). By connecting to the ACC through Forge APIs, the application can securely retrieve project data and present it to the user in a clear and concise manner.The application allows users to upload folders containing files and subfolders, and the application takes care of all the necessary HTTP requests required to upload each file individually. This ensures that each file is uploaded in the correct order, and all necessary metadata is included.",
+    "isFeatured": true,
+    "developmentProjectType": "Desktop",
+    "platform": "APSForge",
+    "featuredMediaElement": {
+      "url": "assets/projects/docs-uploader/overview.mp4",
+      "description": "This video is an overview of the plugin features showing you the plugin in action.",
+      "isYoutube": false,
+      "thumbnail": "assets/projects/docs-uploader/thumbnail.png"
+    },
+    "metrics": {
+      "usersImpacted": "Enterprise teams at Qiddiya gigaproject",
+      "timeSaved": "Hours of manual file uploads eliminated per cycle",
+      "status": "In production use",
+      "highlights": [
+        "Handles bulk folder uploads with nested subfolders to ACC",
+        "Visual upload manager tracks status of every file in real-time",
+        "Integrated with Autodesk Forge/APS OAuth and Data Management APIs"
+      ]
+    },
+    "keyFeatures": [
+      {
+        "header": "Seamless ACC integeration",
+        "points": [
+          "Connects directly to Autodesk Construction Cloud using Forge APIs.",
+          "Securely retrieves and presents project data without requiring users to navigate the ACC web interface."
+        ],
+        "image": "assets/projects/general/integration.webp"
+      },
+      {
+        "header": "Intuitive data access and manipulation",
+        "points": [
+          "Displays project data in a clear and concise manner, making it easy to find and understand relevant information.",
+          "Allows users to interact with and manipulate data as needed, potentially including viewing, filtering, sorting, and exporting."
+        ],
+        "image": "assets/projects/general/dataVisualization.webp"
+      },
+      {
+        "header": "Streamlines folder uploads with upload manager",
+        "points": [
+          "Enables users to upload entire folders, including subfolders and files, in a single action.",
+          "Handles all necessary HTTP requests for individual file uploads, ensuring correct order and metadata inclusion.",
+          "Provides a visual upload manager window to track the status of each uploaded file (done, uploading, canceled)."
+        ],
+        "image": "assets/projects/general/upload.webp"
+      }
+    ],
+    "technologyStack": [
+      {
+        "name": ".NET"
+      },
+      {
+        "name": "C#"
+      },
+      {
+        "name": "WPF"
+      },
+      {
+        "name": "MVVM"
+      },
+      {
+        "name": "Forge APIs"
+      },
+      {
+        "name": "Rest APIs"
+      },
+      {
+        "name": "Entity Framework"
+      }
+    ],
+    "videos": [
+      {
+        "url": "assets/projects/docs-uploader/overview.mp4",
+        "description": "This video is an overview of the plugin features showing you the plugin in action.",
+        "isYoutube": false,
+        "thumbnail": "assets/projects/docs-uploader/thumbnail.png"
+      }
+    ]
+  },
+  {
+    "$type": "development",
+    "id": "d4e5f6a7-b8c9-0123-defa-234567890104",
+    "name": "TA Elevation Inspector",
+    "slug": "ta-elevation-inspector",
+    "projectType": "Development",
+    "shortDescription": "Plugin for Autodesk® Navisworks® simplifies elevation inspection with real-time feedback and customizable settings.",
+    "longDescription": "TA Elevation Inspector is an advanced plugin for Autodesk® Navisworks® that simplifies elevation inspection and viewpoint management. It enables real-time spot elevation feedback with dynamic markup updates, customizable settings for text and display preferences, and streamlined viewpoint creation. With a sleek dockable interface, it enhances precision and efficiency, making it an essential tool for detailed project review and documentation.",
+    "downloadLink": "https://apps.autodesk.com/NAVIS/en/Detail/Index?id=5943521605376785096&appLang=en&os=Win64",
+    "isFeatured": false,
+    "developmentProjectType": "Plugin",
+    "platform": "Navisworks",
+    "featuredMediaElement": {
+      "url": "https://www.youtube.com/embed/qNjkGsFcLv8",
+      "description": "This video is an overview of the plugin features showing you the plugin in action.",
+      "isYoutube": true
+    },
+    "keyFeatures": [
+      {
+        "header": "Elevation Inspection Tool",
+        "points": [
+          "Easily inspect spot elevations in real-time within the Navisworks environment, with dynamic markup text that updates as you move the mouse."
+        ],
+        "image": "assets/projects/ta-elevation-inspector/features/point.png"
+      },
+      {
+        "header": "Custom Viewpoint Creation",
+        "points": [
+          "Create and save viewpoints with personalized markup text, tailored to specific project requirements, ensuring organized and efficient project reviews."
+        ],
+        "image": "assets/projects/general/dataVisualization.webp"
+      },
+      {
+        "header": "Customizable Settings",
+        "points": [
+          "Customize text size, color, and offset (X and Y coordinates) to match your preferences, and define naming conventions for organized viewpoint management."
+        ],
+        "image": "assets/projects/general/settings.webp"
+      },
+      {
+        "header": "Dockable WPF Panel",
+        "points": [
+          "Experience a sleek, dockable interface that allows seamless interaction with all plugin features without disrupting your workflow."
+        ],
+        "image": "assets/projects/general/ui.webp"
+      }
+    ],
+    "technologyStack": [
+      {
+        "name": ".NET"
+      },
+      {
+        "name": "C#"
+      },
+      {
+        "name": "WPF"
+      },
+      {
+        "name": "MVVM"
+      },
+      {
+        "name": "Navisworks APIs"
+      }
+    ],
+    "videos": [
+      {
+        "url": "https://www.youtube.com/embed/qNjkGsFcLv8",
+        "description": "This video is an overview of the plugin features showing you the plugin in action.",
+        "isYoutube": true
+      }
+    ]
+  },
+  {
+    "$type": "development",
+    "id": "e5f6a7b8-c9d0-1234-efab-345678901205",
+    "name": "Docu Forge",
+    "slug": "docu-forge",
+    "projectType": "Development",
+    "shortDescription": "Web application streamlines printing RFIs, issues, and forms in ACC projects using customizable branded templates.",
+    "longDescription": "Web application designed to streamline the process of printing RFIs, issues, and forms in ACC projects. Users can create a template that includes placeholders for the data they want to retrieve, such as RFI numbers, issue descriptions, or form fields. The template can be customized to include the user's company logo, branding, or other design elements.When the user is ready to print the document, they simply select the template they want to use and the application automatically replaces the placeholders with the actual data from the project. The resulting PDF document can then be downloaded or printed directly from the application.",
+    "isFeatured": false,
+    "developmentProjectType": "Web",
+    "platform": "APSForge",
+    "metrics": {
+      "usersImpacted": "Document control teams on enterprise AEC projects",
+      "timeSaved": "Reduced RFI/form printing from hours to minutes",
+      "status": "Deployed internally",
+      "highlights": [
+        "Full-stack React + ASP.NET with Forge API backend",
+        "Drag-and-drop template designer with live preview",
+        "Auto-populates ACC project data into branded PDF output"
+      ]
+    },
+    "keyFeatures": [
+      {
+        "header": "Template Creation",
+        "points": [
+          "Users can design templates with drag-and-drop functionality, ensuring ease of use.",
+          "Placeholders for various data fields (RFI numbers, descriptions, form fields, etc.) are readily available."
+        ],
+        "image": "assets/projects/general/template.webp"
+      },
+      {
+        "header": "Customization options",
+        "points": [
+          "Company branding elements (logo, colors, fonts).",
+          "Layout and formatting control.",
+          "Multiple template storage for diverse document needs."
+        ],
+        "image": "assets/projects/general/settings.webp"
+      },
+      {
+        "header": "Data Integration",
+        "points": [
+          "Seamless connection to ACC project data for effortless retrieval.",
+          "Automatic placeholder replacement with actual project information."
+        ],
+        "image": "assets/projects/general/integration.webp"
+      },
+      {
+        "header": "PDF generation and printing",
+        "points": [
+          "High-quality PDF creation with accurate formatting and data representation.",
+          "Download or direct printing options from within the application."
+        ],
+        "image": "assets/projects/general/pdf.webp"
+      }
+    ],
+    "technologyStack": [
+      {
+        "name": ".NET"
+      },
+      {
+        "name": "C#"
+      },
+      {
+        "name": "ASP.NET"
+      },
+      {
+        "name": "Forge APIs"
+      },
+      {
+        "name": "Web APIs"
+      },
+      {
+        "name": "HTML"
+      },
+      {
+        "name": "CSS"
+      },
+      {
+        "name": "JS"
+      },
+      {
+        "name": "React TS"
+      }
+    ]
+  },
+  {
+    "$type": "development",
+    "id": "f6a7b8c9-d0e1-2345-fabc-456789012306",
+    "name": "Elsewedy Busway",
+    "slug": "elsewedy-busway",
+    "projectType": "Development",
+    "shortDescription": "Revit plugin that streamlines the design and fabrication of busway networks,This ensures a smooth and precise workflow from initial design through to fabrication.",
+    "longDescription": "The Elsewedy Busway plugin significantly enhances busway network design within Revit by automating key tasks such as product selection based on configuration details, 3D network sketching with guidelines, and efficient auto-routing for optimal design. It allows for seamless part swapping, accurate dimensioning of both sketch and fabricated routes, and comprehensive sheet generation, including QTO schedules and annotations. This ensures a smooth and precise workflow from initial design through to fabrication, reducing manual effort and increasing overall project efficiency.",
+    "isFeatured": false,
+    "developmentProjectType": "Plugin",
+    "platform": "Revit",
+    "keyFeatures": [
+      {
+        "header": "Products Selection",
+        "points": [
+          "Enter configuration details to automatically choose suitable products, load all necessary families, and generate the required types, ensuring all components meet specified criteria."
+        ],
+        "image": "assets/projects/elsewedy-busway/features/newproduct.png"
+      },
+      {
+        "header": "Sketching",
+        "points": [
+          "Select suitable configuration to begin 3D network sketching with guidelines, simplifying the design process within Revit."
+        ],
+        "image": "assets/projects/elsewedy-busway/features/sketch.png"
+      },
+      {
+        "header": "Feed Units",
+        "points": [
+          "Easily insert feed units from a comprehensive list of available options, ensuring accurate placement and integration into the network."
+        ],
+        "image": "assets/projects/elsewedy-busway/features/unit.png"
+      },
+      {
+        "header": "Fittings",
+        "points": [
+          "Insert various fittings from an extensive list, allowing for flexible and precise customization of the busway network."
+        ],
+        "image": "assets/projects/elsewedy-busway/features/fitting.png"
+      },
+      {
+        "header": "Accessories",
+        "points": [
+          "Add accessories from a wide range of available items, enhancing the functionality and completeness of the busway system."
+        ],
+        "image": "assets/projects/elsewedy-busway/features/accessory.png"
+      },
+      {
+        "header": "Auto Routing",
+        "points": [
+          " Automatically create the shortest route between selected elements, optimizing the design for efficiency and reducing manual effort."
+        ],
+        "image": "assets/projects/elsewedy-busway/features/autoroute.png"
+      },
+      {
+        "header": "Swapping Parts",
+        "points": [
+          " Swap parts within the busway network seamlessly without breaking the connections, maintaining network integrity during modifications."
+        ],
+        "image": "assets/projects/elsewedy-busway/features/swappart.png"
+      },
+      {
+        "header": "Quantities Takeoff",
+        "points": [
+          "Insert various fittings from an extensive list, allowing for flexible and precise customization of the busway network."
+        ],
+        "image": "assets/projects/elsewedy-busway/features/qto.png"
+      },
+      {
+        "header": "Fabrication",
+        "points": [
+          "Convert the selected busway route into a fabrication route using an algorithm that cuts straights to standard lengths, providing the best possible solution for manufacturing."
+        ],
+        "image": "assets/projects/elsewedy-busway/features/fabricate.png"
+      },
+      {
+        "header": "Unfabricate",
+        "points": [
+          "Revert a fabricated route back to a sketch route, allowing for easy modifications and adjustments."
+        ],
+        "image": "assets/projects/elsewedy-busway/features/unfabricate.png"
+      },
+      {
+        "header": "Modify Fabricated Route",
+        "points": [
+          "Edit and modify fabricated elements within the route without breaking the continuity, ensuring flexible adjustments while maintaining integrity."
+        ],
+        "image": "assets/projects/elsewedy-busway/features/modify.png"
+      },
+      {
+        "header": "Plugins",
+        "points": [
+          "Replace a straight fabricated busway element with a plugin from available plugin types, offering enhanced customization options."
+        ],
+        "image": "assets/projects/elsewedy-busway/features/plugin.png"
+      },
+      {
+        "header": "Supports",
+        "points": [
+          "Automatically add supports to the selected busway route based on user input settings, ensuring proper support and stability for the network."
+        ],
+        "image": "assets/projects/elsewedy-busway/features/support.png"
+      },
+      {
+        "header": "Sketch Route Dimension",
+        "points": [
+          "Add dimensions to the straight elements of the selected sketch route in the 3D view, providing clear and precise annotations for better visualization."
+        ],
+        "image": "assets/projects/elsewedy-busway/features/dimensionsketch.png"
+      },
+      {
+        "header": "Annotate Fabricated Route",
+        "points": [
+          " This feature assigns a letter to each unique element in the fabricated route, adds it as a keynote annotation on the element, and generates a schedule detailing each unique element, including quantity and all necessary details."
+        ],
+        "image": "assets/projects/elsewedy-busway/features/annotation.png"
+      },
+      {
+        "header": "Fabricated Route Dimension",
+        "points": [
+          "Add dimensions to the all elements of the selected fabricated route in the 3D view, providing clear and precise annotations for better visualization."
+        ],
+        "image": "assets/projects/elsewedy-busway/features/dimensionfab.png"
+      },
+      {
+        "header": "Generate Sheets",
+        "points": [
+          "Select the title block and route to automatically generate sheets, including options to add QTO schedules and annotations to the route, streamlining the documentation process."
+        ],
+        "image": "assets/projects/elsewedy-busway/features/generatesheet.png"
+      }
+    ],
+    "technologyStack": [
+      {
+        "name": ".NET"
+      },
+      {
+        "name": "C#"
+      },
+      {
+        "name": "WPF"
+      },
+      {
+        "name": "MVVM"
+      },
+      {
+        "name": "Entity Framework"
+      },
+      {
+        "name": "Revit APIs"
+      }
+    ]
+  },
+  {
+    "$type": "development",
+    "id": "a7b8c9d0-e1f2-3456-abcd-567890123407",
+    "name": "PoE (Power over Ethernet)",
+    "slug": "poe",
+    "projectType": "Development",
+    "shortDescription": "Revit add-in enables seamless creation and integration of Power over Ethernet (PoE) schematic diagrams which are linked to the Revit model.",
+    "longDescription": "Revit add-in that empowers designers to create, edit, and seamlessly integrate PoE (Power over Ethernet) schematic diagrams within their Revit projects, streamlining electrical design workflows and enhancing project coordination.",
+    "isFeatured": false,
+    "developmentProjectType": "Plugin",
+    "platform": "Revit",
+    "keyFeatures": [
+      {
+        "header": "Node-based schematic design",
+        "points": [
+          "PoE schematic diagram creation and editing is built around a node-based schematic designer.",
+          "Each node within the application represents a PoE device and is equipped with input and output ports.",
+          "These nodes offer a visual representation of your PoE devices and provide a versatile platform for creating and editing schematic diagrams."
+        ],
+        "image": "assets/projects/general/ui.webp"
+      },
+      {
+        "header": "Color-coded ports and wiring",
+        "points": [
+          "The plugin simplifies this process by employing color-coded ports and wiring.",
+          "Ports, whether they are for power, data, or PoE, are visually differentiated based on the type of connectivity they offer.",
+          "The wiring between ports is also color-coded to represent the cable type used, allowing for clear and easy identification of different cable connections."
+        ],
+        "image": "assets/projects/general/cable.webp"
+      },
+      {
+        "header": "Technical and linking warnings",
+        "points": [
+          "The warning system will alert you to technical errors or missing links within your schematic diagrams.",
+          "Identifying and resolving these issues before progressing to the next stage ensures a smoother and more accurate design process."
+        ],
+        "image": "assets/projects/general/detect.webp"
+      },
+      {
+        "header": "Devices library integration",
+        "points": [
+          "Device library enabling you to seamlessly incorporate PoE devices into your schematic layouts.",
+          "This library offers an array of devices, each with unique specifications, ensuring you can select the most suitable device for your specific application."
+        ],
+        "image": "assets/projects/general/integration.webp"
+      },
+      {
+        "header": "Revit element linking",
+        "points": [
+          "You can link your PoE schematic diagrams to the appropriate Revit elements, including lighting fixtures, PoE switches, PoE TVs, and various other devices, simplifying the integration of your electrical designs with your Revit projects."
+        ],
+        "image": "assets/projects/general/link.webp"
+      }
+    ],
+    "technologyStack": [
+      {
+        "name": ".NET"
+      },
+      {
+        "name": "C#"
+      },
+      {
+        "name": "WPF"
+      },
+      {
+        "name": "MVVM"
+      },
+      {
+        "name": "Revit APIs"
+      }
+    ]
+  },
+  {
+    "$type": "development",
+    "id": "b8c9d0e1-f2a3-4567-bcde-678901234508",
+    "name": "TA Sheets Generator",
+    "slug": "ta-sheets-generator",
+    "projectType": "Development",
+    "shortDescription": "TA Sheets Generator is AutoCAD® plugin that automate the layout creation and provide a dynamic link between layouts and polylines.",
+    "longDescription": "TA Sheets Generator is designed to enhance the layout creation process and provide a dynamic link between layouts and polylines, streamlining the user experience and improving efficiency.",
+    "downloadLink": "https://apps.autodesk.com/ACD/en/Detail/Index?id=766427936028380541&appLang=en&os=Win32_64",
+    "isFeatured": false,
+    "developmentProjectType": "Plugin",
+    "platform": "AutoCAD",
+    "featuredMediaElement": {
+      "url": "https://www.youtube.com/embed/wGEuzKSxD4k",
+      "description": "This video is an overview of the plugin features showing you the plugin in action.",
+      "isYoutube": true
+    },
+    "keyFeatures": [
+      {
+        "header": "Automated layout creation",
+        "points": [
+          "The plugin automates the layout creation process with option to add grids lines along with easting an northing coordinates, reducing the need for manual layout creation and saving users time and effort."
+        ],
+        "image": "assets/projects/ta-sheets-generator/features/GenerateSheets.png"
+      },
+      {
+        "header": "Dynamic link between layouts and polylines",
+        "points": [
+          "The plugin links layouts to polylines, automatically updating layouts when polylines change, saving time and reducing errors."
+        ],
+        "image": "assets/projects/general/link.webp"
+      },
+      {
+        "header": "Customizable settings",
+        "points": [
+          "The plugin offers customizable settings, allowing users to tailor it to their specific needs and preferences."
+        ],
+        "image": "assets/projects/general/settings.webp"
+      },
+      {
+        "header": "User-Friendly Interface",
+        "points": [
+          "Navigate through a simple and intuitive interface that requires no special training or expertise."
+        ],
+        "image": "assets/projects/general/ui.webp"
+      }
+    ],
+    "technologyStack": [
+      {
+        "name": ".NET"
+      },
+      {
+        "name": "C#"
+      },
+      {
+        "name": "WPF"
+      },
+      {
+        "name": "MVVM"
+      },
+      {
+        "name": "AutoCAD APIs"
+      }
+    ],
+    "videos": [
+      {
+        "url": "https://www.youtube.com/embed/wGEuzKSxD4k",
+        "description": "This video is an overview of the plugin features showing you the plugin in action.",
+        "isYoutube": true
+      }
+    ]
+  },
+  {
+    "$type": "development",
+    "id": "c9d0e1f2-a3b4-5678-cdef-789012345609",
+    "name": "TA Solids Extractor",
+    "slug": "ta-solids-extractor",
+    "projectType": "Development",
+    "shortDescription": "TA Solids Extractor is a powerful Autodesk® Civil 3D® plugin that automates the time-consuming process of extracting 3D solids from surfaces and corridors.",
+    "longDescription": "Creating 3D solids from surfaces and corridors in Autodesk® Civil 3D® can be a time-consuming and repetitive task. TA Solids Extractor is a powerful plugin designed to solve this problem by providing a fast and easy way to automate the entire process. The intuitive user interface guides you through the process, from selecting your objects to generating the final solids, in just a few simple clicks.",
+    "downloadLink": "https://apps.autodesk.com/CIV3D/en/Detail/Index?id=602757672328120568&appLang=en&os=Win64",
+    "isFeatured": false,
+    "developmentProjectType": "Plugin",
+    "platform": "Civil3D",
+    "featuredMediaElement": {
+      "url": "https://www.youtube.com/embed/o6KvUGlhMD0",
+      "description": "This video is an overview of the plugin features showing you the plugin in action.",
+      "isYoutube": true
+    },
+    "keyFeatures": [
+      {
+        "header": "Automated Surface Solid Extraction",
+        "points": [
+          "Quickly convert one or more Civil 3D surfaces into 3D solids.",
+          "Use flexible selection methods: choose from a list, select all, or pick directly from the drawing.",
+          "Gain full control over solid properties: specify depth, layer, and color."
+        ],
+        "image": "assets/projects/ta-solids-extractor/features/SurfaceSolids.png"
+      },
+      {
+        "header": "Effortless Corridor Solid Extraction",
+        "points": [
+          "Extract 3D solids directly from your corridor models.",
+          "Select multiple corridors at once from a list or by picking from the drawing to process them in a single operation."
+        ],
+        "image": "assets/projects/ta-solids-extractor/features/CorridorSolids.png"
+      },
+      {
+        "header": "Flexible Output Options",
+        "points": [
+          "Create solids directly in your current drawing.",
+          "Export them safely to a separate external DWG file without overwriting existing work."
+        ],
+        "image": "assets/projects/general/dwg.webp"
+      }
+    ],
+    "technologyStack": [
+      {
+        "name": ".NET"
+      },
+      {
+        "name": "C#"
+      },
+      {
+        "name": "WPF"
+      },
+      {
+        "name": "MVVM"
+      },
+      {
+        "name": "AutoCAD APIs"
+      },
+      {
+        "name": "Civil3D APIs"
+      }
+    ],
+    "videos": [
+      {
+        "url": "https://www.youtube.com/embed/o6KvUGlhMD0 ",
+        "description": "This video is an overview of the plugin features showing you the plugin in action.",
+        "isYoutube": true
+      }
+    ]
+  },
+  {
+    "$type": "development",
+    "id": "d0e1f2a3-b4c5-6789-defa-890123456710",
+    "name": "TA Auto Points",
+    "slug": "ta-auto-points",
+    "projectType": "Development",
+    "shortDescription": "TA Auto Points is a powerful Civil 3D® plugin that automates the creation of COGO points from polylines, alignments, profiles, and corridors.",
+    "longDescription": "TA Auto Points is a powerful Autodesk® Civil 3D® plugin that automates the creation of COGO points from polylines, alignments, profiles, and corridors. The tool eliminates repetitive manual work and helps you generate consistent, accurate point data with minimal effort.",
+    "downloadLink": "https://apps.autodesk.com/CIV3D/en/Detail/Index?id=871177266319636625&appLang=en&os=Win64",
+    "isFeatured": false,
+    "developmentProjectType": "Plugin",
+    "platform": "Civil3D",
+    "featuredMediaElement": {
+      "url": "https://www.youtube.com/embed/Ba1om9qBXrU",
+      "description": "This video is an overview of the plugin features showing you the plugin in action.",
+      "isYoutube": true
+    },
+    "keyFeatures": [
+      {
+        "header": "Polyline Points",
+        "points": [
+          "Generate points along polylines using flexible placement rules such as fixed intervals or geometry vertices.",
+          "Assign generated points to a specific point group and choose the point style and label style."
+        ],
+        "image": "assets/projects/ta-auto-points/features/PolylinePoints.png"
+      },
+      {
+        "header": "Alignment Points",
+        "points": [
+          "Automate point creation from alignments and profiles at fixed intervals or horizontal geometry points.",
+          "Obtain elevations from the first design profile or from a profile found by keyword search."
+        ],
+        "image": "assets/projects/ta-auto-points/features/AlignmentPoints.png"
+      },
+      {
+        "header": "Corridor Points",
+        "points": [
+          "Extract points from corridors based on selected point codes.",
+          "Organize points by creating separate point groups for each corridor or placing all points into a single group."
+        ],
+        "image": "assets/projects/ta-auto-points/features/CorridorPoints.png"
+      }
+    ],
+    "technologyStack": [
+      {
+        "name": ".NET"
+      },
+      {
+        "name": "C#"
+      },
+      {
+        "name": "WPF"
+      },
+      {
+        "name": "MVVM"
+      },
+      {
+        "name": "AutoCAD APIs"
+      },
+      {
+        "name": "Civil3D APIs"
+      }
+    ],
+    "videos": [
+      {
+        "url": "https://www.youtube.com/embed/Ba1om9qBXrU",
+        "description": "This video is an overview of the plugin features showing you the plugin in action.",
+        "isYoutube": true
+      }
+    ]
+  },
+  {
+    "$type": "development",
+    "id": "e1f2a3b4-c5d6-7890-efab-901234567811",
+    "name": "Docs Archive",
+    "slug": "docs-archive",
+    "projectType": "Development",
+    "shortDescription": "Windows service syncs local project archives with Autodesk Construction Cloud (ACC), downloading only necessary updates.",
+    "longDescription": "Windows service designed to keep local project archives in sync with the cloud version stored in the Autodesk Construction Cloud (ACC). The service runs in the background, periodically checking for changes and downloading only the necessary updates to the local server. This optimizes the synchronization process and minimizes the amount of data transferred over the network.Users can edit the settings file to customize the service according to their needs. For example, they can adjust the interval time between syncs to ensure that the service runs at the most convenient time or set a maximum download speed limit to optimize network usage.",
+    "isFeatured": true,
+    "developmentProjectType": "Service",
+    "platform": "APSForge",
+    "metrics": {
+      "usersImpacted": "Enterprise project teams requiring offline ACC backups",
+      "timeSaved": "Fully automated — zero manual intervention after setup",
+      "status": "Running in production",
+      "highlights": [
+        "Incremental sync downloads only changed files",
+        "Configurable intervals and bandwidth throttling",
+        "Runs as a Windows background service with auto-recovery"
+      ]
+    },
+    "keyFeatures": [
+      {
+        "header": "Optimized synchronization",
+        "points": [
+          "Minimizes data transfer by downloading only necessary updates."
+        ],
+        "image": "assets/projects/general/sync.webp"
+      },
+      {
+        "header": "Customizable settings",
+        "points": [
+          "Users can adjust sync intervals, download speeds, and other parameters to suit their preferences and network conditions."
+        ],
+        "image": "assets/projects/general/settings.webp"
+      },
+      {
+        "header": "Backgournd Operation",
+        "points": [
+          "Runs unobtrusively, ensuring project files stay up-to-date without manual intervention."
+        ],
+        "image": "assets/projects/general/automation.webp"
+      }
+    ],
+    "technologyStack": [
+      {
+        "name": ".NET"
+      },
+      {
+        "name": "C#"
+      },
+      {
+        "name": "WPF"
+      },
+      {
+        "name": "MVVM"
+      },
+      {
+        "name": "Background Service"
+      },
+      {
+        "name": "Forge APIs"
+      },
+      {
+        "name": "Rest APIs"
+      }
+    ]
+  },
+  {
+    "$type": "development",
+    "id": "f2a3b4c5-d6e7-8901-fabc-012345678912",
+    "name": "Builder works",
+    "slug": "builder-works",
+    "projectType": "Development",
+    "shortDescription": "Revit add-in that automates the creation of openings for ducts, pipes, cable trays, and conduits in walls, floors, and ceilings.",
+    "longDescription": "Revit add-in that automates the creation of openings for ducts, pipes, cable trays, and conduits in walls, floors, and ceilings, streamlining workflows and enhancing project coordination.",
+    "isFeatured": false,
+    "developmentProjectType": "Plugin",
+    "platform": "Revit",
+    "keyFeatures": [
+      {
+        "header": "Customizable rules engine",
+        "points": [
+          "Enables users to define precise rules for opening creation based on host and reference types.",
+          "Offers granular control over opening placement, size, and shape."
+        ],
+        "image": "assets/projects/general/settings.webp"
+      },
+      {
+        "header": "Comprehensive clash detection",
+        "points": [
+          "Automatically identifies clashes between building elements and MEP components.",
+          "Ensures accurate opening placement and avoids conflicts."
+        ],
+        "image": "assets/projects/general/detect.webp"
+      },
+      {
+        "header": "Parameters transfer",
+        "points": [
+          "Transfers user-specified parameters from hosts and references to created openings.",
+          "Maintains data consistency and facilitates downstream workflows."
+        ],
+        "image": "assets/projects/general/transfer.webp"
+      },
+      {
+        "header": "Opening state tracking",
+        "points": [
+          "Visualizes the history and state of each opening (new, updated, deleted) within a user-friendly WPF window.",
+          "Provides clear visibility into opening changes and facilitates decision-making."
+        ],
+        "image": "assets/projects/general/tracking.webp"
+      },
+      {
+        "header": "User-friendly interface",
+        "points": [
+          "Offers an intuitive interface for rule creation, configuration, and execution.",
+          "Simplifies the process for users of all experience levels."
+        ],
+        "image": "assets/projects/general/ui.webp"
+      }
+    ],
+    "technologyStack": [
+      {
+        "name": ".NET"
+      },
+      {
+        "name": "C#"
+      },
+      {
+        "name": "WPF"
+      },
+      {
+        "name": "MVVM"
+      },
+      {
+        "name": "Revit APIs"
+      }
+    ]
+  },
+  {
+    "$type": "development",
+    "id": "a3b4c5d6-e7f8-9012-abcd-123456789013",
+    "name": "Log Manager",
+    "slug": "log-manager",
+    "projectType": "Development",
+    "shortDescription": "A Windows background service for ACC that automates log retrieval and processing, enhancing security and integrating with NetWitness for efficient analysis.",
+    "longDescription": "This project introduces a Windows background service for ACC/BIM360 that automates log retrieval and processing to enhance security. It provides a user-friendly and secure solution for accessing, analyzing, and managing activity logs, integrating seamlessly with NetWitness for efficient analysis.",
+    "isFeatured": false,
+    "developmentProjectType": "Service",
+    "platform": "APSForge",
+    "keyFeatures": [
+      {
+        "header": "Efficient Log Retrieval",
+        "points": [
+          "Automatically retrieves logs from ACC/BIM360 projects using Autodesk Forge APIs, filtering based on pre-defined criteria to ensure relevant data collection."
+        ],
+        "image": "assets/projects/general/log.webp"
+      },
+      {
+        "header": "Secure Desktop Authentication",
+        "points": [
+          "Provides a dedicated desktop application for secure user authentication, ensuring authorized access to the log management system."
+        ],
+        "image": "assets/projects/general/auth.webp"
+      },
+      {
+        "header": "Automated Background Processing",
+        "points": [
+          "Utilizes a Windows service running in the background to automate log processing tasks, eliminating manual intervention and ensuring continuous log collection and analysis."
+        ],
+        "image": "assets/projects/general/automation.webp"
+      },
+      {
+        "header": "Seamless NetWitness Integration",
+        "points": [
+          "Integrates with NetWitness, a leading SIEM platform, for efficient analysis of collected logs within a familiar and robust security framework."
+        ],
+        "image": "assets/projects/general/integration.webp"
+      }
+    ],
+    "technologyStack": [
+      {
+        "name": ".NET"
+      },
+      {
+        "name": "C#"
+      },
+      {
+        "name": "WPF"
+      },
+      {
+        "name": "MVVM"
+      },
+      {
+        "name": "Forge APIs"
+      },
+      {
+        "name": "Windows Service"
+      }
+    ]
+  },
+  {
+    "$type": "roads",
+    "id": "b4c5d6e7-f8a9-0123-bcde-234567890114",
+    "name": "Celia",
+    "slug": "celia",
+    "projectType": "Roads",
+    "shortDescription": "The residential project involved designing a road network for an area over 500 Feddan, located in the New Administrative Capital, Egypt, and was commissioned by TMG (Talaat Mostafa Group).",
+    "longDescription": "The residential project involved designing a road network for an area over 500 Feddan, located in the New Administrative Capital, Egypt, and was commissioned by TMG (Talaat Mostafa Group).",
+    "isFeatured": false,
+    "technologyStack": [
+      {
+        "name": "AutoCAD"
+      },
+      {
+        "name": "Civil3D"
+      },
+      {
+        "name": "Vehicle Tracking"
+      },
+      {
+        "name": "Dynamo"
+      }
+    ]
+  },
+  {
+    "$type": "roads",
+    "id": "c5d6e7f8-a9b0-1234-cdef-345678901215",
+    "name": "Golf Porto Cairo",
+    "slug": "golf-porto-cairo",
+    "projectType": "Roads",
+    "shortDescription": "The residential project involved designing a road network for an area over 150 Feddan, located in the New Cairo, Egypt, and was commissioned by Porto Group.",
+    "longDescription": "The residential project involved designing a road network for an area over 150 Feddan, located in the New Cairo, Egypt, and was commissioned by Porto Group.",
+    "isFeatured": false,
+    "technologyStack": [
+      {
+        "name": "AutoCAD"
+      },
+      {
+        "name": "Civil3D"
+      },
+      {
+        "name": "Vehicle Tracking"
+      }
+    ]
+  },
+  {
+    "$type": "roads",
+    "id": "d6e7f8a9-b0c1-2345-defa-456789012316",
+    "name": "An Nasim",
+    "slug": "an-nasim",
+    "projectType": "Roads",
+    "shortDescription": "The project involved roads development for an 11,000,000 m² (2600 Fadden) residential neighborhood, commissioned by Green Riyadh.",
+    "longDescription": "The project involved roads development for an 11,000,000 m² (2600 Fadden) residential neighborhood, commissioned by Green Riyadh.",
+    "isFeatured": false,
+    "technologyStack": [
+      {
+        "name": "AutoCAD"
+      },
+      {
+        "name": "Civil3D"
+      },
+      {
+        "name": "Vehicle Tracking"
+      },
+      {
+        "name": "Dynamo"
+      },
+      {
+        "name": "Subassembly Composer"
+      }
+    ]
+  },
+  {
+    "$type": "roads",
+    "id": "e7f8a9b0-c1d2-3456-efab-567890123417",
+    "name": "TBC Schools",
+    "slug": "tbc-schools",
+    "projectType": "Roads",
+    "shortDescription": "The project involved designing roads, parking areas, and a 3D BIM model for 60 schools in Riyadh and Makkah, commissioned by the Ministry of Education and managed by Wave One Project Company LTD.",
+    "longDescription": "The project involved designing surrounding roads and off-street parking areas for 60 schools located in Riyadh and Makkah. A 3D BIM model was created for the designed areas to ensure precise planning and integration. This initiative was commissioned by the Ministry of Education and managed by Wave One Project Company LTD.",
+    "isFeatured": false,
+    "technologyStack": [
+      {
+        "name": "AutoCAD"
+      },
+      {
+        "name": "Civil3D"
+      },
+      {
+        "name": "Vehicle Tracking"
+      },
+      {
+        "name": "Navisworks"
+      },
+      {
+        "name": "BIM Modeling"
+      }
+    ]
+  },
+  {
+    "$type": "roads",
+    "id": "f8a9b0c1-d2e3-4567-fabc-678901234518",
+    "name": "Madinaty B08",
+    "slug": "madinaty-b08",
+    "projectType": "Roads",
+    "shortDescription": "The residential project involved designing a road network for an area over 225 Feddan, located in New Cairo, Egypt, and was commissioned by TMG (Talaat Mostafa Group).",
+    "longDescription": "The residential project involved designing a road network for an area over 225 Feddan, located in New Cairo, Egypt, and was commissioned by TMG (Talaat Mostafa Group).",
+    "isFeatured": false,
+    "technologyStack": [
+      {
+        "name": "AutoCAD"
+      },
+      {
+        "name": "Civil3D"
+      },
+      {
+        "name": "Vehicle Tracking"
+      }
+    ]
+  },
+  {
+    "$type": "roads",
+    "id": "a9b0c1d2-e3f4-5678-abcd-789012345619",
+    "name": "Porto Phoenice",
+    "slug": "porto-phoenice",
+    "projectType": "Roads",
+    "shortDescription": "The resort project involved designing a road network for an area over 700 feddan, located in Marsa Alam, Egypt, commissioned by TMG (Talaat Mostafa Group).",
+    "longDescription": "The resort project involved designing a road network for an area over 700 feddan, located in Marsa Alam, Egypt, commissioned by TMG (Talaat Mostafa Group).",
+    "isFeatured": false,
+    "technologyStack": [
+      {
+        "name": "AutoCAD"
+      },
+      {
+        "name": "Civil3D"
+      },
+      {
+        "name": "Vehicle Tracking"
+      },
+      {
+        "name": "Dynamo"
+      }
+    ]
+  },
+  {
+    "$type": "roads",
+    "id": "b0c1d2e3-f4a5-6789-bcde-890123456720",
+    "name": "90 Avenue",
+    "slug": "90-avenue",
+    "projectType": "Roads",
+    "shortDescription": "The residential project involved designing a road network for an area over 50 Feddan, located in New Cairo, Egypt, and was commissioned by Tabarak Holding.",
+    "longDescription": "The residential project involved designing a road network for an area over 50 Feddan, located in New Cairo, Egypt, and was commissioned by Tabarak Holding.",
+    "isFeatured": false,
+    "technologyStack": [
+      {
+        "name": "AutoCAD"
+      },
+      {
+        "name": "Civil3D"
+      },
+      {
+        "name": "Vehicle Tracking"
+      }
+    ]
+  },
+  {
+    "$type": "roads",
+    "id": "c1d2e3f4-a5b6-7890-cdef-901234567821",
+    "name": "Bahr El Baqar Water Treatment Plant",
+    "slug": "bahr-el-baqar",
+    "projectType": "Roads",
+    "shortDescription": "The project involved a technical review for a 660,000 m² (157 Fadden) water treatment plant, commissioned by Orascom Construction & The Arab Contractors.",
+    "longDescription": "The project involved a technical review for a 660,000 m² (157 Fadden) water treatment plant, commissioned by Orascom Construction & The Arab Contractors.",
+    "isFeatured": false,
+    "technologyStack": [
+      {
+        "name": "AutoCAD"
+      },
+      {
+        "name": "Civil3D"
+      },
+      {
+        "name": "Vehicle Tracking"
+      }
+    ]
+  },
+  {
+    "$type": "roads",
+    "id": "d2e3f4a5-b6c7-8901-defa-012345678922",
+    "name": "Buraydah & Tabuk Treatment Plants",
+    "slug": "buraydah-tabuk-treatment-plants",
+    "projectType": "Roads",
+    "shortDescription": "The project involved designing surrounding roads for multiple treatment plants located at Buraydah and Tabuk.",
+    "longDescription": "The project involved designing surrounding roads for multiple treatment plants located at Buraydah and Tabuk.",
+    "isFeatured": false,
+    "technologyStack": [
+      {
+        "name": "AutoCAD"
+      },
+      {
+        "name": "Civil3D"
+      },
+      {
+        "name": "Vehicle Tracking"
+      }
+    ]
+  },
+  {
+    "$type": "roads",
+    "id": "e3f4a5b6-c7d8-9012-efab-123456789023",
+    "name": "Saudi Landbridge Rail Line",
+    "slug": "saudi-landbridge-rail-line",
+    "projectType": "Roads",
+    "shortDescription": "The project involved technical support for intersections between a 950 km railway connecting Riyadh and Jeddah with existing roads.",
+    "longDescription": "The project involved technical support for intersections between a 950 km railway connecting Riyadh and Jeddah with existing roads.",
+    "isFeatured": false,
+    "technologyStack": [
+      {
+        "name": "AutoCAD"
+      },
+      {
+        "name": "Civil3D"
+      },
+      {
+        "name": "Vehicle Tracking"
+      }
+    ]
+  },
+  {
+    "$type": "roads",
+    "id": "f4a5b6c7-d8e9-0123-fabc-234567890124",
+    "name": "Cruise Terminal Area Development",
+    "slug": "cruise-terminal-area-development",
+    "projectType": "Roads",
+    "shortDescription": "Focused on roads development in cruise terminal area located at Abu Dhabi, the project aims to design new road profiles and cross-sections.",
+    "longDescription": "Focused on roads development in cruise terminal area located at Abu Dhabi, the project aims to design new road profiles and cross-sections.",
+    "isFeatured": false,
+    "technologyStack": [
+      {
+        "name": "AutoCAD"
+      },
+      {
+        "name": "Civil3D"
+      },
+      {
+        "name": "Vehicle Tracking"
+      }
+    ]
+  }
+]

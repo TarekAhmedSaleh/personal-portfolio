@@ -1,0 +1,129 @@
+/* ============================================================
+   SHARED ANIMATIONS — Single source of truth for all keyframes
+   used across multiple components.
+   ============================================================ */
+
+/* ── Pulse dot (status indicators) ── */
+@keyframes pulse-dot {
+    0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(var(--mud-palette-primary-rgb), 0.7);
+    }
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 6px rgba(var(--mud-palette-primary-rgb), 0);
+    }
+    100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(var(--mud-palette-primary-rgb), 0);
+    }
+}
+
+/* ── Fade in + slide up ── */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ── Gentle floating (used by hero cards) ── */
+@keyframes float {
+    0%, 100% { transform: translateY(0px) rotate(var(--rotation, 0deg)); }
+    50%      { transform: translateY(-8px) rotate(var(--rotation, 0deg)); }
+}
+
+/* ── Spin (processing indicators) ── */
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+}
+
+/* ── Scale pop (success states) ── */
+@keyframes pop {
+    0%   { transform: scale(0.5); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+/* ============================================================
+   SHARED UTILITY CLASSES
+   ============================================================ */
+
+/* Shared status pill pattern */
+.status-pill-base {
+    background-color: rgba(var(--mud-palette-primary-rgb), 0.1) !important;
+    border: 1px solid rgba(var(--mud-palette-primary-rgb), 0.2);
+    border-radius: 20px;
+    padding: 4px 12px;
+}
+
+.status-dot-base {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: var(--mud-palette-primary);
+    border-radius: 50%;
+    margin-right: 8px;
+    box-shadow: 0 0 8px var(--mud-palette-primary);
+    animation: pulse-dot 2s infinite;
+}
+
+.status-text-base {
+    color: var(--mud-palette-primary);
+    font-weight: 700;
+    font-size: 0.75rem;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+/* Font weight utilities */
+.fw-600 { font-weight: 600; }
+.fw-700 { font-weight: 700; }
+.fw-800 { font-weight: 800; }
+.fw-900 { font-weight: 900; }
+
+/* Text gradient utility */
+.text-gradient {
+    background: linear-gradient(90deg, var(--mud-palette-primary) 0%, var(--mud-palette-info) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Section icon wrap (reused in Resume, ProjectDetails) */
+.section-icon-wrap {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(var(--mud-palette-primary-rgb), 0.12);
+    color: var(--mud-palette-primary);
+}
+
+.section-icon-wrap-lg {
+    width: 48px;
+    height: 48px;
+    border-radius: 14px;
+    border: 1px solid rgba(var(--mud-palette-primary-rgb), 0.2);
+}
+
+/* Section title pattern */
+.section-title {
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+/* Primary text color utility */
+.mud-primary-text {
+    color: var(--mud-palette-primary);
+}
+
+
+

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tarek Ahmed | Portfolio</title>
+    <base href="/personal-portfolio/" />
+    <link href="_framework/dotnet.4uh5peyvwy.js" rel="preload" as="script" fetchpriority="high" crossorigin="anonymous" integrity="sha256-dIX0ZspQj+7dyTxLJbtYbjnVlbsckeuma2iTD8gow90=" />
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="css/shared-animations.css" />
+    <link href="MudPortfolio.styles.css" rel="stylesheet" />
+
+    <!-- Inter font — loaded async so it never blocks first paint -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"></noscript>
+
+    <link href="_content/MudBlazor/MudBlazor.min.css" rel="stylesheet" />
+
+    <!-- AOS CSS — loaded async so it never blocks first paint -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css"></noscript>
+
+    <script type="importmap">{
+  "imports": {
+    "./_framework/blazor.webassembly.js": "./_framework/blazor.webassembly.66stpp682q.js",
+    "./_framework/dotnet.js": "./_framework/dotnet.4uh5peyvwy.js",
+    "./_framework/dotnet.native.js": "./_framework/dotnet.native.x3rpdbivul.js",
+    "./_framework/dotnet.runtime.js": "./_framework/dotnet.runtime.peu2mfb29t.js"
+  },
+  "scopes": {},
+  "integrity": {
+    "./_framework/blazor.webassembly.66stpp682q.js": "sha256-3lCWrko3zwspV40aQhs2S/IMkRSarnHRKIdkHhuXIBA=",
+    "./_framework/blazor.webassembly.js": "sha256-3lCWrko3zwspV40aQhs2S/IMkRSarnHRKIdkHhuXIBA=",
+    "./_framework/dotnet.4uh5peyvwy.js": "sha256-dIX0ZspQj+7dyTxLJbtYbjnVlbsckeuma2iTD8gow90=",
+    "./_framework/dotnet.js": "sha256-dIX0ZspQj+7dyTxLJbtYbjnVlbsckeuma2iTD8gow90=",
+    "./_framework/dotnet.native.js": "sha256-g5FwiMEEfrDuPFUeW16luY+t1+/bPH5hWLWKtqpUnNY=",
+    "./_framework/dotnet.native.x3rpdbivul.js": "sha256-g5FwiMEEfrDuPFUeW16luY+t1+/bPH5hWLWKtqpUnNY=",
+    "./_framework/dotnet.runtime.js": "sha256-cajUr4vA/MpLPWj3omULUOwEQw3i8CE2n8AmDheqWBM=",
+    "./_framework/dotnet.runtime.peu2mfb29t.js": "sha256-cajUr4vA/MpLPWj3omULUOwEQw3i8CE2n8AmDheqWBM="
+  }
+}</script>
+</head>
+
+<body>
+    <div id="app">
+        <style>
+            :root {
+                /* Fallback colors matching dark theme, used before MudBlazor variables load */
+                --mud-palette-background-custom: #0f172a;
+                --mud-palette-surface-custom: #1e293b;
+                --mud-palette-primary-custom: #3282b8;
+                --mud-palette-text-primary-custom: #f8fafc;
+                --mud-palette-text-secondary-custom: #94a3b8;
+            }
+
+            .loading-container {
+                height: 100vh;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: radial-gradient(circle at center, var(--mud-palette-surface, var(--mud-palette-surface-custom)) 0%, var(--mud-palette-background, var(--mud-palette-background-custom)) 100%);
+                flex-direction: column;
+                margin: 0;
+            }
+
+            .loader-content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                animation: slow-fade-in 1.5s ease-out forwards;
+            }
+
+            .loader-title {
+                color: var(--mud-palette-text-primary, var(--mud-palette-text-primary-custom));
+                font-family: 'Inter', system-ui, sans-serif;
+                font-weight: 500;
+                font-size: 1.5rem;
+                letter-spacing: 0.5rem;
+                margin: 0 0 0.5rem 0.5rem;
+                text-transform: uppercase;
+            }
+
+            .loader-subtitle {
+                color: var(--mud-palette-text-secondary, var(--mud-palette-text-secondary-custom));
+                font-family: 'Inter', system-ui, sans-serif;
+                font-weight: 400;
+                font-size: 0.8rem;
+                letter-spacing: 0.3rem;
+                margin: 0 0 2.5rem 0.3rem;
+                text-transform: uppercase;
+            }
+
+            .loader-line-track {
+                width: 200px;
+                height: 1px;
+                background: rgba(255, 255, 255, 0.1);
+                position: relative;
+                overflow: hidden;
+            }
+
+            .loader-line-fill {
+                position: absolute;
+                top: 0;
+                left: -50%;
+                height: 100%;
+                width: 50%;
+                background: var(--mud-palette-primary, var(--mud-palette-primary-custom));
+                animation: premium-load-slide 2.5s cubic-bezier(0.65, 0, 0.35, 1) infinite;
+            }
+
+            @keyframes slow-fade-in {
+                0% { opacity: 0; transform: translateY(10px); }
+                100% { opacity: 1; transform: translateY(0); }
+            }
+
+            @keyframes premium-load-slide {
+                0% { left: -50%; }
+                100% { left: 100%; }
+            }
+        </style>
+        <div class="loading-container">
+            <div class="loader-content">
+                <h1 class="loader-title">Tarek Ahmed</h1>
+                <h2 class="loader-subtitle">AEC Software Developer</h2>
+                <div class="loader-line-track">
+                    <div class="loader-line-fill"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="blazor-error-ui">
+        An unhandled error has occurred.
+        <a href="." class="reload">Reload</a>
+        <span class="dismiss">🗙</span>
+    </div>
+    <script src="_framework/blazor.webassembly.66stpp682q.js"></script>
+    <script src="_content/MudBlazor/MudBlazor.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        window.blazorAOS = {
+            init: function () {
+                AOS.init({
+                    duration: 800,
+                    once: true,
+                    offset: 50
+                });
+            },
+            refresh: function () {
+                AOS.refreshHard();
+            }
+        };
+
+        // ── Appbar scroll state ──────────────────────────────────────────────────────────
+        window.initScrollListener = function () {
+            window.addEventListener('scroll', function () {
+                var header = document.querySelector('.appbar');
+                if (header) {
+                    if (window.scrollY > 50) header.classList.add('scrolled');
+                    else header.classList.remove('scrolled');
+                }
+            }, { passive: true });
+        };
+
+        // ── Count-up number animation (IntersectionObserver-driven) ─────────────────────
+        window.initCounters = function () {
+            setTimeout(function () {
+                var observer = new IntersectionObserver(function (entries) {
+                    entries.forEach(function (entry) {
+                        if (entry.isIntersecting) {
+                            var el = entry.target;
+                            var target = parseInt(el.getAttribute('data-target'));
+                            var suffix = el.getAttribute('data-suffix') || '';
+                            var prefix = el.getAttribute('data-prefix') || '';
+                            if (isNaN(target)) return;
+                            var duration = 800;
+                            var start = performance.now();
+                            var animate = function (time) {
+                                var progress = Math.min((time - start) / duration, 1);
+                                el.innerText = prefix + Math.floor(target * progress) + suffix;
+                                if (progress < 1) requestAnimationFrame(animate);
+                                else el.innerText = prefix + target + suffix;
+                            };
+                            requestAnimationFrame(animate);
+                            observer.unobserve(el);
+                        }
+                    });
+                }, { threshold: 0.5 });
+                document.querySelectorAll('.count-up').forEach(function (c) { observer.observe(c); });
+            }, 100);
+        };
+
+        // ── Smooth scroll to element by ID ───────────────────────────────────────────────
+        window.scrollToElement = function (elementId) {
+            document.getElementById(elementId)?.scrollIntoView({ behavior: 'smooth' });
+        };
+    </script>
+</body>
+</html>
