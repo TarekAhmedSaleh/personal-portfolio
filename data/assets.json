@@ -96,6 +96,15 @@
                                                        "4.png"
                                                    ]
                                },
+    "ta-intersection-checker":  {
+                                    "icon":  "Icon.png",
+                                    "screenshots":  [
+                                                        "1.PNG",
+                                                        "2.PNG",
+                                                        "3.PNG",
+                                                        "4.PNG"
+                                                    ]
+                                },
     "ta-roads-planner":  {
                              "icon":  "icon.png",
                              "screenshots":  [

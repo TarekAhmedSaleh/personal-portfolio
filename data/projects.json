@@ -1515,5 +1515,83 @@
         "name": "Vehicle Tracking"
       }
     ]
+  },
+  {
+    "$type": "development",
+    "id": "440ceded-50f8-4ea1-96b3-f43f970f407c",
+    "name": "TA Intersection Checker",
+    "slug": "ta-intersection-checker",
+    "projectType": "Development",
+    "shortDescription": "Civil 3D plug-in designed to streamline intersection analysis, ensuring accurate and efficient road design.",
+    "longDescription": "The Intersections Checker is a Civil 3D plug-in designed to streamline intersection analysis, ensuring accurate and efficient road design. Features automatic detection, comprehensive grid views, COGO point creation, automatic labeling, and invalid intersection flagging.",
+    "downloadLink": "https://apps.autodesk.com/CIV3D/en/Detail/Index?id=1036476462231535754&appLang=en&os=Win64",
+    "isFeatured": false,
+    "developmentProjectType": "Plugin",
+    "platform": "Civil3D",
+    "metrics": {
+      "downloads": "100+",
+      "timeSaved": "~50% reduction in intersection QA/QC",
+      "status": "Published on Autodesk App Store",
+      "highlights": [
+        "Automatic intersection detection",
+        "Comprehensive Grid View with elevation checks",
+        "COGO Point Creation and Labeling"
+      ]
+    },
+    "keyFeatures": [
+      {
+        "header": "Intersection Detection & Grid View",
+        "points": [
+          "Automatically detects all intersections between alignments and checks the elevations of intersecting profiles.",
+          "Displays intersection results in a detailed grid, highlighting both valid and invalid intersection points."
+        ],
+        "image": "assets/projects/ta-intersection-checker/features/IntersectionPointsTable.png"
+      },
+      {
+        "header": "COGO Point Creation",
+        "points": [
+          "Automatically generates COGO points at valid intersection locations for quick reference."
+        ],
+        "image": "assets/projects/ta-intersection-checker/features/point.png"
+      },
+      {
+        "header": "Intersection Labeling",
+        "points": [
+          "Easily labels intersection points for better clarity and visualization within your design."
+        ],
+        "image": "assets/projects/ta-intersection-checker/features/LabelIntersections.png"
+      },
+      {
+        "header": "Invalid Intersection Flagging",
+        "points": [
+          "Quickly identifies and flags invalid intersections, allowing for quick corrective action."
+        ],
+        "image": "assets/projects/ta-intersection-checker/features/InvalidPoint.png"
+      }
+    ],
+    "technologyStack": [
+      {
+        "name": ".NET"
+      },
+      {
+        "name": "C#"
+      },
+      {
+        "name": "WPF"
+      },
+      {
+        "name": "MVVM"
+      },
+      {
+        "name": "Civil3D APIs"
+      }
+    ],
+    "videos": [
+      {
+        "url": "https://www.youtube.com/embed/mtDmz7P_jUI",
+        "description": "This video is an overview of the plugin features showing you the plugin in action.",
+        "isYoutube": true
+      }
+    ]
   }
 ]
