@@ -380,7 +380,17 @@
         "description": "This video is an overview of the plugin features showing you the plugin in action.",
         "isYoutube": true
       }
-    ]
+    ],
+    "metrics": {
+      "downloads": "250+",
+      "timeSaved": "~60% reduction in drawing workflows",
+      "status": "Published on Autodesk App Store",
+      "highlights": [
+        "Visual Road Section Editor",
+        "Seamless Section Sharing",
+        "Automatic Typical Cross Sections"
+      ]
+    }
   },
   {
     "$type": "development",
@@ -538,7 +548,16 @@
         "description": "This video is an overview of the plugin features showing you the plugin in action.",
         "isYoutube": true
       }
-    ]
+    ],
+    "metrics": {
+      "timeSaved": "~50% faster viewpoint creation",
+      "status": "Published on Autodesk App Store",
+      "highlights": [
+        "Live Navisworks Spot Elevations",
+        "Dynamic Text Markup",
+        "Automated Viewpoint Management"
+      ]
+    }
   },
   {
     "$type": "development",
@@ -921,7 +940,17 @@
         "description": "This video is an overview of the plugin features showing you the plugin in action.",
         "isYoutube": true
       }
-    ]
+    ],
+    "metrics": {
+      "downloads": "100+",
+      "timeSaved": "~80% reduction in layout generation",
+      "status": "Published on Autodesk App Store",
+      "highlights": [
+        "Automated Layout Grids",
+        "Dynamic Polyline Links",
+        "Custom Coordinate Tagging"
+      ]
+    }
   },
   {
     "$type": "development",
@@ -993,7 +1022,17 @@
         "description": "This video is an overview of the plugin features showing you the plugin in action.",
         "isYoutube": true
       }
-    ]
+    ],
+    "metrics": {
+      "downloads": "100+",
+      "timeSaved": "~70% faster 3D solids extraction",
+      "status": "Published on Autodesk App Store",
+      "highlights": [
+        "1-Click Surface to Solid Conversion",
+        "Batch Corridor Extraction",
+        "Safe External DWG Export"
+      ]
+    }
   },
   {
     "$type": "development",
@@ -1064,7 +1103,17 @@
         "description": "This video is an overview of the plugin features showing you the plugin in action.",
         "isYoutube": true
       }
-    ]
+    ],
+    "metrics": {
+      "downloads": "100+",
+      "timeSaved": "~60% reduction in COGO point layout",
+      "status": "Published on Autodesk App Store",
+      "highlights": [
+        "Flexible Interval Assignments",
+        "Alignment Geometry Targeting",
+        "Corridor Code Extraction"
+      ]
+    }
   },
   {
     "$type": "development",
