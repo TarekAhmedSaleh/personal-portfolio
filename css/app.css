@@ -102,57 +102,54 @@ h6:focus,
     outline: none !important;
 }
 
-/* Custom Cursor */
-.cursor-dot,
-.cursor-outline {
-    pointer-events: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-    opacity: 0;
-    z-index: 99999;
-    transition: opacity 0.3s ease-in-out, transform 0.3s ease-out, width 0.3s ease-out, height 0.3s ease-out, border-color 0.3s ease-out, background-color 0.3s ease-out;
-}
-
-.cursor-dot {
-    width: 10px;
-    height: 10px;
-    background-color: var(--mud-palette-text-primary);
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
-}
-
-.cursor-outline {
-    width: 35px;
-    height: 35px;
-    border: 1.5px solid var(--mud-palette-text-primary);
-    opacity: 0.4;
-}
-
-
-.cursor-hover .cursor-dot {
-    transform: translate(-50%, -50%) scale(1);
-    opacity: 1;
-    box-shadow: 0 0 20px var(--mud-palette-text-primary);
-}
-
-.cursor-hover .cursor-outline {
-    width: 65px;
-    height: 65px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-color: var(--mud-palette-text-primary);
-    opacity: 0.8;
-}
-
-
 @media (pointer: fine) {
+    /* Custom Cursor */
+    .cursor-dot,
+    .cursor-outline {
+        pointer-events: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        opacity: 0;
+        z-index: 99999;
+        transition: opacity 0.3s ease-in-out, transform 0.3s ease-out, width 0.3s ease-out, height 0.3s ease-out, border-color 0.3s ease-out, background-color 0.3s ease-out;
+    }
+
+    .cursor-dot {
+        width: 10px;
+        height: 10px;
+        background-color: var(--mud-palette-text-primary);
+        box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+    }
+
+    .cursor-outline {
+        width: 35px;
+        height: 35px;
+        border: 1.5px solid var(--mud-palette-text-primary);
+        opacity: 0.4;
+    }
+
+    .cursor-hover .cursor-dot {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+        box-shadow: 0 0 20px var(--mud-palette-text-primary);
+    }
+
+    .cursor-hover .cursor-outline {
+        width: 65px;
+        height: 65px;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-color: var(--mud-palette-text-primary);
+        opacity: 0.8;
+    }
+
     *, html, body, a, button, .cursor-pointer, .mud-button-root, .mud-list-item, .mud-card-header, .mud-tab, .bento-card, .mud-icon-button, .mud-nav-link {
         cursor: none !important;
     }
-}
 
-
-.cursor-active {
-    opacity: 1 !important;
+    .cursor-active {
+        opacity: 1 !important;
+    }
 }
