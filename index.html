@@ -14,6 +14,10 @@
     <link rel="icon" type="image/jpeg" href="images/tarek-profile.jpg" />
     <link rel="apple-touch-icon" href="images/tarek-profile.jpg" />
 
+    <!-- PWA manifest & mobile browser chrome color -->
+    <link rel="manifest" href="manifest.webmanifest" />
+    <meta name="theme-color" content="#0f172a" />
+
     <!-- SEO & Social Sharing Thumbnails (Open Graph / Twitter) -->
     <meta property="og:site_name" content="Tarek Ahmed Portfolio" />
     <meta property="og:type" content="website" />
@@ -26,7 +30,26 @@
     <meta name="twitter:description" content="Portfolio of Tarek Ahmed, an AEC Software Developer specializing in premium web applications and engineering tools." />
     <meta name="twitter:image" content="images/tarek-profile.jpg" />
 
-    <link href="_framework/dotnet.cd313h2ze1.js" rel="preload" as="script" fetchpriority="high" crossorigin="anonymous" integrity="sha256-UG6VFpx8koxR7dfQ6uR9AeyFr7WDuAK465s3r61PYi8=" />
+    <!-- Structured data (schema.org Person) for richer search results -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Tarek Ahmed",
+      "jobTitle": "AEC Software Developer",
+      "url": "https://tarekahmedsaleh.github.io/personal-portfolio/",
+      "image": "https://tarekahmedsaleh.github.io/personal-portfolio/images/tarek-profile.jpg",
+      "knowsAbout": ["Revit API", "Civil 3D", "AutoCAD Plugins", "Autodesk Platform Services", "BIM Automation", "Blazor", ".NET", "C#"],
+      "sameAs": [
+        "https://github.com/TarekAhmedSaleh",
+        "https://www.linkedin.com/in/tarek-ahmed-715ba5173/",
+        "https://www.youtube.com/@TA_Solutions",
+        "https://apps.autodesk.com/en/Publisher/PublisherHomepage?ID=VR7RLKPPBRDD"
+      ]
+    }
+    </script>
+
+    <link href="_framework/dotnet.k0fnd8odn3.js" rel="preload" as="script" fetchpriority="high" crossorigin="anonymous" integrity="sha256-xLjY+DrV56phjIuzOVbZfXOQ2vpUV9nz4MM/MNniFTw=" />
     <link rel="stylesheet" href="css/app.css" />
     <link rel="stylesheet" href="css/shared-animations.css" />
     
@@ -46,7 +69,7 @@
     <script type="importmap">{
   "imports": {
     "./_framework/blazor.webassembly.js": "./_framework/blazor.webassembly.66stpp682q.js",
-    "./_framework/dotnet.js": "./_framework/dotnet.cd313h2ze1.js",
+    "./_framework/dotnet.js": "./_framework/dotnet.k0fnd8odn3.js",
     "./_framework/dotnet.native.js": "./_framework/dotnet.native.n1dw2943hf.js",
     "./_framework/dotnet.runtime.js": "./_framework/dotnet.runtime.a6jcqbs390.js"
   },
@@ -54,8 +77,8 @@
   "integrity": {
     "./_framework/blazor.webassembly.66stpp682q.js": "sha256-3lCWrko3zwspV40aQhs2S/IMkRSarnHRKIdkHhuXIBA=",
     "./_framework/blazor.webassembly.js": "sha256-3lCWrko3zwspV40aQhs2S/IMkRSarnHRKIdkHhuXIBA=",
-    "./_framework/dotnet.cd313h2ze1.js": "sha256-UG6VFpx8koxR7dfQ6uR9AeyFr7WDuAK465s3r61PYi8=",
-    "./_framework/dotnet.js": "sha256-UG6VFpx8koxR7dfQ6uR9AeyFr7WDuAK465s3r61PYi8=",
+    "./_framework/dotnet.js": "sha256-xLjY+DrV56phjIuzOVbZfXOQ2vpUV9nz4MM/MNniFTw=",
+    "./_framework/dotnet.k0fnd8odn3.js": "sha256-xLjY+DrV56phjIuzOVbZfXOQ2vpUV9nz4MM/MNniFTw=",
     "./_framework/dotnet.native.js": "sha256-9e9R341sjA7CCvoFvvgHUTIYQSKbAvcEROh54Dgxv0M=",
     "./_framework/dotnet.native.n1dw2943hf.js": "sha256-9e9R341sjA7CCvoFvvgHUTIYQSKbAvcEROh54Dgxv0M=",
     "./_framework/dotnet.runtime.a6jcqbs390.js": "sha256-7i3usfTrnzC/9qWO4si5Bw4w7D9fUSnSBdhQ47blX2M=",

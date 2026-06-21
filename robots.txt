@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tarekahmedsaleh.github.io/personal-portfolio/sitemap.xml

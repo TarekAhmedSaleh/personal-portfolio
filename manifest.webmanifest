@@ -1,0 +1,23 @@
+{
+  "name": "Tarek Ahmed | AEC Software Developer Portfolio",
+  "short_name": "Tarek Ahmed",
+  "description": "Portfolio of Tarek Ahmed, an AEC Software Developer specializing in Revit, Civil 3D and AutoCAD plugins, Autodesk Platform Services integrations, and BIM workflow automation.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#0f172a",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "images/tarek-profile.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ]
+}
