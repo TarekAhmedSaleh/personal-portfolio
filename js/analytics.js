@@ -44,25 +44,3 @@ export function trackEvent(name, parameters) {
     if (!initialized || !window.gtag) return;
     window.gtag('event', name, parameters || {});
 }
-
-// ── Microsoft Clarity — heatmaps & session recordings ────────────────────────────
-// Loaded the same way as GA: runtime, config-driven, and skipped on local host.
-let clarityInitialized = false;
-
-export function initializeClarity(projectId) {
-    if (clarityInitialized || !projectId) return;
-
-    const host = window.location.hostname;
-    if (host === 'localhost' || host === '127.0.0.1' || host === '[::1]') {
-        console.info('[clarity] disabled on local host');
-        return;
-    }
-
-    (function (c, l, a, r, i, t, y) {
-        c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments); };
-        t = l.createElement(r); t.async = 1; t.src = 'https://www.clarity.ms/tag/' + i;
-        y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
-    })(window, document, 'clarity', 'script', projectId);
-
-    clarityInitialized = true;
-}
