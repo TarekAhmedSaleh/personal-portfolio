@@ -1,0 +1,1 @@
+import{j as s,C as o,d as r}from"./index-Czoy0-Gn.js";function i({children:n,className:a,containerClassName:e,id:t}){return s.jsx("section",{id:t,className:r("py-14 sm:py-20",a),children:s.jsx(o,{className:e,children:n})})}export{i as S};
