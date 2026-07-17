@@ -1,0 +1,35 @@
+# Tarek Ahmed, AEC Software Engineer
+
+> A civil engineer turned software engineer who builds the software that AEC (Architecture,
+> Engineering & Construction) teams rely on: Autodesk plugins (Revit, Civil 3D, AutoCAD,
+> Navisworks), Autodesk Platform Services (APS, formerly Forge) and Autodesk Construction Cloud
+> (ACC/BIM 360) integrations, and enterprise web platforms in C#/.NET, Blazor, ASP.NET Core, and
+> React/TypeScript. Based in Riyadh, Saudi Arabia. Currently a Senior AEC Software Developer at
+> LTIMindtree on the Qiddiya gigaproject; founder of TA Solutions, whose commercial plugins have
+> passed 1,000+ installs on the Autodesk App Store at a 5.0 average rating.
+
+## Specialties
+- Autodesk plugin development: Revit API, Civil 3D API, AutoCAD API, Navisworks API (C#/.NET, WPF/MVVM)
+- Autodesk Platform Services (APS/Forge) and Autodesk Construction Cloud (ACC/BIM 360) integrations: OAuth, Data Management, Issues APIs
+- Enterprise web platforms: Blazor, ASP.NET Core, React, TypeScript, SQL Server, Entity Framework Core
+- Engineering automation and digital engineering for the AEC/BIM industry
+
+## Pages
+- Home: https://tarekahmedsaleh.github.io/personal-portfolio/
+- Projects (engineering case studies with architecture diagrams): https://tarekahmedsaleh.github.io/personal-portfolio/projects
+- About (engineering principles): https://tarekahmedsaleh.github.io/personal-portfolio/about
+- Resume: https://tarekahmedsaleh.github.io/personal-portfolio/resume
+- Contact: https://tarekahmedsaleh.github.io/personal-portfolio/contact
+
+## Selected projects
+- TA Roads Toolkit: Civil 3D plugin that automates 19+ road-design workflows; 500+ App Store installs across four major releases.
+- Docs Uploader: Windows desktop client that bulk-uploads folder trees to Autodesk Construction Cloud on the APS Data Management API, with per-file retryable state; uploads direct to ACC so deep paths never hit the Windows path limit that ruled out Desktop Connector. In production at Kemet Corporation.
+- Elsewedy Busway: Revit plugin taking busway networks from design to fabrication with a catalog-backed product model and a sketch/fabrication dual representation.
+- PoE: Revit add-in with a typed node-based schematic editor bound to the Revit model.
+- Docs Archive: Windows service performing incremental sync of ACC data to a local mirror.
+
+## Links
+- GitHub: https://github.com/TarekAhmedSaleh
+- LinkedIn: https://www.linkedin.com/in/tarek-ahmed-715ba5173/
+- Autodesk App Store (TA Solutions publisher): https://apps.autodesk.com/en/Publisher/PublisherHomepage?ID=VR7RLKPPBRDD
+- YouTube: https://www.youtube.com/@TA_Solutions

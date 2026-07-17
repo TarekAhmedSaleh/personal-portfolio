@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>An Nasim | Tarek Ahmed</title>
+    <meta name="description" content="The project involved roads development for an 11,000,000 m² (2600 Fadden) residential neighborhood, commissioned by Green Riyadh." />
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/jpeg" href="/personal-portfolio/images/tarek-profile.jpg" />
+    <link rel="apple-touch-icon" href="/personal-portfolio/images/tarek-profile.jpg" />
+
+    <!-- PWA -->
+    <link rel="manifest" href="/personal-portfolio/manifest.webmanifest" />
+    <meta name="theme-color" content="#f7f7f8" />
+
+    <!-- Social / Open Graph (per-route values are set at runtime via react-helmet-async) -->
+    <meta property="og:site_name" content="Tarek Ahmed Portfolio" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="An Nasim | Tarek Ahmed" />
+    <meta property="og:description" content="The project involved roads development for an 11,000,000 m² (2600 Fadden) residential neighborhood, commissioned by Green Riyadh." />
+    <meta
+      property="og:image"
+      content="https://tarekahmedsaleh.github.io/personal-portfolio/images/og-cover.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Tarek Ahmed, AEC Software Engineer" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:image"
+      content="https://tarekahmedsaleh.github.io/personal-portfolio/images/og-cover.png"
+    />
+
+    <!-- Structured data (schema.org Person) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://tarekahmedsaleh.github.io/personal-portfolio/#website",
+            "url": "https://tarekahmedsaleh.github.io/personal-portfolio/",
+            "name": "Tarek Ahmed, AEC Software Engineer",
+            "description": "Portfolio of Tarek Ahmed, an AEC Software Engineer building Autodesk plugins, APS/ACC cloud integrations, and enterprise BIM platforms.",
+            "inLanguage": "en",
+            "publisher": { "@id": "https://tarekahmedsaleh.github.io/personal-portfolio/#person" }
+          },
+          {
+            "@type": "ProfilePage",
+            "@id": "https://tarekahmedsaleh.github.io/personal-portfolio/#profilepage",
+            "url": "https://tarekahmedsaleh.github.io/personal-portfolio/",
+            "name": "Tarek Ahmed, AEC Software Engineer",
+            "isPartOf": { "@id": "https://tarekahmedsaleh.github.io/personal-portfolio/#website" },
+            "about": { "@id": "https://tarekahmedsaleh.github.io/personal-portfolio/#person" },
+            "inLanguage": "en"
+          },
+          {
+            "@type": "Person",
+            "@id": "https://tarekahmedsaleh.github.io/personal-portfolio/#person",
+            "name": "Tarek Ahmed",
+            "jobTitle": "AEC Software Engineer",
+            "description": "Civil engineer turned software engineer building Autodesk plugins, APS/ACC cloud integrations, and enterprise BIM platforms for the AEC industry.",
+            "url": "https://tarekahmedsaleh.github.io/personal-portfolio/",
+            "image": "https://tarekahmedsaleh.github.io/personal-portfolio/images/tarek-profile.jpg",
+            "worksFor": {
+              "@type": "Organization",
+              "name": "LTIMindtree"
+            },
+            "alumniOf": {
+              "@type": "CollegeOrUniversity",
+              "name": "Ain Shams University"
+            },
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Riyadh",
+              "addressCountry": "SA"
+            },
+            "hasOccupation": {
+              "@type": "Occupation",
+              "name": "AEC Software Engineer",
+              "occupationalCategory": "15-1252.00 Software Developers",
+              "skills": "React, TypeScript, C#, .NET, ASP.NET Core, Blazor, Autodesk Platform Services, Revit API, Civil 3D API, Navisworks API, BIM automation, engineering automation"
+            },
+            "knowsAbout": [
+              "Enterprise Software Engineering",
+              "React",
+              "TypeScript",
+              "C#",
+              ".NET",
+              "ASP.NET Core",
+              "Blazor",
+              "Autodesk Platform Services",
+              "Autodesk Construction Cloud",
+              "Revit API",
+              "Civil 3D API",
+              "AutoCAD Plugin Development",
+              "Navisworks API",
+              "BIM Automation",
+              "AEC Technology",
+              "Engineering Automation",
+              "Digital Engineering"
+            ],
+            "sameAs": [
+              "https://github.com/TarekAhmedSaleh",
+              "https://www.linkedin.com/in/tarek-ahmed-715ba5173/",
+              "https://www.youtube.com/@TA_Solutions",
+              "https://apps.autodesk.com/en/Publisher/PublisherHomepage?ID=VR7RLKPPBRDD",
+              "https://tasolutionstech.com"
+            ]
+          }
+        ]
+      }
+    </script>
+
+    <!-- Apply theme before first paint (no flash of wrong theme).
+         An explicit choice wins; otherwise follow the OS. Must stay inline and synchronous:
+         deferring this to the bundle would paint the wrong theme first. -->
+    <script>
+      ;(function () {
+        try {
+          var stored = localStorage.getItem('portfolio-theme')
+          var dark = stored
+            ? stored === 'dark'
+            : window.matchMedia('(prefers-color-scheme: dark)').matches
+          if (dark) document.documentElement.classList.add('dark')
+        } catch (e) {}
+      })()
+    </script>
+
+    <style>
+      /* Minimal pre-hydration splash — replaced the instant React mounts */
+      #boot {
+        position: fixed;
+        inset: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        background: #f7f7f8;
+        font-family: 'Inter Variable', system-ui, sans-serif;
+      }
+      html.dark #boot {
+        background: #0d0d0f;
+      }
+      #boot .name {
+        font-size: 0.8rem;
+        font-weight: 500;
+        letter-spacing: 0.4em;
+        text-transform: uppercase;
+        color: #0d0d0f;
+      }
+      html.dark #boot .name {
+        color: #fafafa;
+      }
+      #boot .track {
+        width: 140px;
+        height: 1px;
+        overflow: hidden;
+        background: rgba(128, 128, 128, 0.2);
+      }
+      #boot .fill {
+        width: 40%;
+        height: 100%;
+        background: #1769d6;
+        animation: boot-slide 1.1s cubic-bezier(0.65, 0, 0.35, 1) infinite;
+      }
+      @keyframes boot-slide {
+        0% { transform: translateX(-100%); }
+        100% { transform: translateX(350%); }
+      }
+    </style>
+    <script type="module" crossorigin src="/personal-portfolio/assets/index-CJr3fn1J.js"></script>
+    <link rel="modulepreload" crossorigin href="/personal-portfolio/assets/react-vendor-Bkizc3j1.js">
+    <link rel="stylesheet" crossorigin href="/personal-portfolio/assets/index-DiljcbxJ.css">
+    <link rel="canonical" href="https://tarekahmedsaleh.github.io/personal-portfolio/projects/an-nasim" />
+    <meta property="og:url" content="https://tarekahmedsaleh.github.io/personal-portfolio/projects/an-nasim" />
+  </head>
+  <body>
+    <div id="root">
+      <div id="boot">
+        <div class="name">Tarek Ahmed</div>
+        <div class="track"><div class="fill"></div></div>
+      </div>
+    </div>
+  </body>
+</html>

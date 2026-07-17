@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tarek Ahmed | AEC Software Developer</title>
+    <title>Tarek Ahmed | AEC Software Engineer</title>
     <meta
       name="description"
-      content="Portfolio of Tarek Ahmed, an AEC Software Developer building custom Revit, Civil 3D, and AutoCAD plugins, Autodesk APS integrations, and end-to-end BIM workflow automation."
+      content="Tarek Ahmed is a civil engineer turned AEC Software Engineer, building Revit, Civil 3D, and AutoCAD plugins, Autodesk APS/ACC cloud integrations, and enterprise BIM platforms: 30+ tools shipped and commercial plugins passing 1,000+ Autodesk App Store installs."
     />
 
     <!-- Favicons -->
@@ -20,10 +20,10 @@
     <!-- Social / Open Graph (per-route values are set at runtime via react-helmet-async) -->
     <meta property="og:site_name" content="Tarek Ahmed Portfolio" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Tarek Ahmed | AEC Software Developer" />
+    <meta property="og:title" content="Tarek Ahmed | AEC Software Engineer" />
     <meta
       property="og:description"
-      content="Custom AEC plugins, platform integrations, and BIM workflows for the built environment."
+      content="A civil engineer turned software engineer, building the Autodesk plugins, cloud integrations, and enterprise platforms that AEC teams run their projects on."
     />
     <meta
       property="og:image"
@@ -31,7 +31,7 @@
     />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Tarek Ahmed — AEC Software Developer" />
+    <meta property="og:image:alt" content="Tarek Ahmed, AEC Software Engineer" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:image"
@@ -42,38 +42,94 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Tarek Ahmed",
-        "jobTitle": "AEC Software Developer",
-        "url": "https://tarekahmedsaleh.github.io/personal-portfolio/",
-        "image": "https://tarekahmedsaleh.github.io/personal-portfolio/images/tarek-profile.jpg",
-        "knowsAbout": [
-          "Revit API",
-          "Civil 3D",
-          "AutoCAD Plugins",
-          "Autodesk Platform Services",
-          "BIM Automation",
-          ".NET",
-          "C#"
-        ],
-        "sameAs": [
-          "https://github.com/TarekAhmedSaleh",
-          "https://www.linkedin.com/in/tarek-ahmed-715ba5173/",
-          "https://www.youtube.com/@TA_Solutions",
-          "https://apps.autodesk.com/en/Publisher/PublisherHomepage?ID=VR7RLKPPBRDD",
-          "https://tarekahmedsaleh.github.io/ta-solutions/"
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://tarekahmedsaleh.github.io/personal-portfolio/#website",
+            "url": "https://tarekahmedsaleh.github.io/personal-portfolio/",
+            "name": "Tarek Ahmed, AEC Software Engineer",
+            "description": "Portfolio of Tarek Ahmed, an AEC Software Engineer building Autodesk plugins, APS/ACC cloud integrations, and enterprise BIM platforms.",
+            "inLanguage": "en",
+            "publisher": { "@id": "https://tarekahmedsaleh.github.io/personal-portfolio/#person" }
+          },
+          {
+            "@type": "ProfilePage",
+            "@id": "https://tarekahmedsaleh.github.io/personal-portfolio/#profilepage",
+            "url": "https://tarekahmedsaleh.github.io/personal-portfolio/",
+            "name": "Tarek Ahmed, AEC Software Engineer",
+            "isPartOf": { "@id": "https://tarekahmedsaleh.github.io/personal-portfolio/#website" },
+            "about": { "@id": "https://tarekahmedsaleh.github.io/personal-portfolio/#person" },
+            "inLanguage": "en"
+          },
+          {
+            "@type": "Person",
+            "@id": "https://tarekahmedsaleh.github.io/personal-portfolio/#person",
+            "name": "Tarek Ahmed",
+            "jobTitle": "AEC Software Engineer",
+            "description": "Civil engineer turned software engineer building Autodesk plugins, APS/ACC cloud integrations, and enterprise BIM platforms for the AEC industry.",
+            "url": "https://tarekahmedsaleh.github.io/personal-portfolio/",
+            "image": "https://tarekahmedsaleh.github.io/personal-portfolio/images/tarek-profile.jpg",
+            "worksFor": {
+              "@type": "Organization",
+              "name": "LTIMindtree"
+            },
+            "alumniOf": {
+              "@type": "CollegeOrUniversity",
+              "name": "Ain Shams University"
+            },
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Riyadh",
+              "addressCountry": "SA"
+            },
+            "hasOccupation": {
+              "@type": "Occupation",
+              "name": "AEC Software Engineer",
+              "occupationalCategory": "15-1252.00 Software Developers",
+              "skills": "React, TypeScript, C#, .NET, ASP.NET Core, Blazor, Autodesk Platform Services, Revit API, Civil 3D API, Navisworks API, BIM automation, engineering automation"
+            },
+            "knowsAbout": [
+              "Enterprise Software Engineering",
+              "React",
+              "TypeScript",
+              "C#",
+              ".NET",
+              "ASP.NET Core",
+              "Blazor",
+              "Autodesk Platform Services",
+              "Autodesk Construction Cloud",
+              "Revit API",
+              "Civil 3D API",
+              "AutoCAD Plugin Development",
+              "Navisworks API",
+              "BIM Automation",
+              "AEC Technology",
+              "Engineering Automation",
+              "Digital Engineering"
+            ],
+            "sameAs": [
+              "https://github.com/TarekAhmedSaleh",
+              "https://www.linkedin.com/in/tarek-ahmed-715ba5173/",
+              "https://www.youtube.com/@TA_Solutions",
+              "https://apps.autodesk.com/en/Publisher/PublisherHomepage?ID=VR7RLKPPBRDD",
+              "https://tasolutionstech.com"
+            ]
+          }
         ]
       }
     </script>
 
     <!-- Apply theme before first paint (no flash of wrong theme).
-         Light is the default; dark only applies if the visitor explicitly chose it. -->
+         An explicit choice wins; otherwise follow the OS. Must stay inline and synchronous:
+         deferring this to the bundle would paint the wrong theme first. -->
     <script>
       ;(function () {
         try {
-          if (localStorage.getItem('portfolio-theme') === 'dark') {
-            document.documentElement.classList.add('dark')
-          }
+          var stored = localStorage.getItem('portfolio-theme')
+          var dark = stored
+            ? stored === 'dark'
+            : window.matchMedia('(prefers-color-scheme: dark)').matches
+          if (dark) document.documentElement.classList.add('dark')
         } catch (e) {}
       })()
     </script>
@@ -121,8 +177,11 @@
         100% { transform: translateX(350%); }
       }
     </style>
-    <script type="module" crossorigin src="/personal-portfolio/assets/index-Czoy0-Gn.js"></script>
-    <link rel="stylesheet" crossorigin href="/personal-portfolio/assets/index-BtZnON92.css">
+    <script type="module" crossorigin src="/personal-portfolio/assets/index-CJr3fn1J.js"></script>
+    <link rel="modulepreload" crossorigin href="/personal-portfolio/assets/react-vendor-Bkizc3j1.js">
+    <link rel="stylesheet" crossorigin href="/personal-portfolio/assets/index-DiljcbxJ.css">
+    <link rel="canonical" href="https://tarekahmedsaleh.github.io/personal-portfolio/" />
+    <meta property="og:url" content="https://tarekahmedsaleh.github.io/personal-portfolio/" />
   </head>
   <body>
     <div id="root">
