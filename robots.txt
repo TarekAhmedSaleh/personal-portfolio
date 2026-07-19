@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://tarekahmedsaleh.github.io/personal-portfolio/sitemap.xml
+Sitemap: https://me.tasolutionstech.com/sitemap.xml

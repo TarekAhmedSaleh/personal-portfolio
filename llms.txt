@@ -15,11 +15,11 @@
 - Engineering automation and digital engineering for the AEC/BIM industry
 
 ## Pages
-- Home: https://tarekahmedsaleh.github.io/personal-portfolio/
-- Projects (engineering case studies with architecture diagrams): https://tarekahmedsaleh.github.io/personal-portfolio/projects
-- About (engineering principles): https://tarekahmedsaleh.github.io/personal-portfolio/about
-- Resume: https://tarekahmedsaleh.github.io/personal-portfolio/resume
-- Contact: https://tarekahmedsaleh.github.io/personal-portfolio/contact
+- Home: https://me.tasolutionstech.com/
+- Projects (engineering case studies with architecture diagrams): https://me.tasolutionstech.com/projects
+- About (engineering principles): https://me.tasolutionstech.com/about
+- Resume: https://me.tasolutionstech.com/resume
+- Contact: https://me.tasolutionstech.com/contact
 
 ## Selected projects
 - TA Roads Toolkit: Civil 3D plugin that automates 19+ road-design workflows; 500+ App Store installs across four major releases.
