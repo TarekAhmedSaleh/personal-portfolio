@@ -4,7 +4,7 @@
 > Engineering & Construction) teams rely on: Autodesk plugins (Revit, Civil 3D, AutoCAD,
 > Navisworks), Autodesk Platform Services (APS, formerly Forge) and Autodesk Construction Cloud
 > (ACC/BIM 360) integrations, and enterprise web platforms in C#/.NET, Blazor, ASP.NET Core, and
-> React/TypeScript. Based in Riyadh, Saudi Arabia. Currently a Senior AEC Software Developer at
+> React/TypeScript. Based in Riyadh, Saudi Arabia. Currently a Senior AEC Software Engineer at
 > LTIMindtree on the Qiddiya gigaproject; founder of TA Solutions, whose commercial plugins have
 > passed 1,000+ installs on the Autodesk App Store at a 5.0 average rating.
 
@@ -16,10 +16,10 @@
 
 ## Pages
 - Home: https://me.tasolutionstech.com/
-- Projects (engineering case studies with architecture diagrams): https://me.tasolutionstech.com/projects
-- About (engineering principles): https://me.tasolutionstech.com/about
-- Resume: https://me.tasolutionstech.com/resume
-- Contact: https://me.tasolutionstech.com/contact
+- Projects (engineering case studies with architecture diagrams): https://me.tasolutionstech.com/projects/
+- About (engineering principles): https://me.tasolutionstech.com/about/
+- Resume: https://me.tasolutionstech.com/resume/
+- Contact: https://me.tasolutionstech.com/contact/
 
 ## Selected projects
 - TA Roads Toolkit: Civil 3D plugin that automates 28 road-design commands; 567+ App Store installs across five major releases.

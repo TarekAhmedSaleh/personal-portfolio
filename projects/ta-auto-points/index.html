@@ -4,7 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TA Auto Points | Tarek Ahmed</title>
-    <meta name="description" content="TA Auto Points is a Civil 3D ® plugin that automates the creation of COGO points from polylines, 3D polylines, feature lines, alignments and corridors." />
+    <!-- `data-rh` on every tag <Seo> also emits: react-helmet-async only replaces tags it
+         recognises as its own, so an unmarked baked tag survives hydration and the page ends up
+         with two canonicals / two descriptions. Two conflicting rel=canonical hints make Google
+         ignore both, which would silently undo the whole point of prerendering these. Tags NOT
+         emitted by <Seo> (og:site_name, og:image:width/height/alt) stay unmarked so helmet leaves
+         them alone. Keep this list and Seo.tsx in sync. -->
+    <meta data-rh="true" name="description" content="TA Auto Points is a Civil 3D ® plugin that automates the creation of COGO points from polylines, 3D polylines, feature lines, alignments and corridors." />
 
     <!-- Favicons -->
     <link rel="icon" href="/favicon.ico" sizes="any" />
@@ -17,18 +23,20 @@
 
     <!-- Social / Open Graph (per-route values are set at runtime via react-helmet-async) -->
     <meta property="og:site_name" content="Tarek Ahmed Portfolio" />
-    <meta property="og:type" content="article" />
-    <meta property="og:title" content="TA Auto Points | Tarek Ahmed" />
-    <meta property="og:description" content="TA Auto Points is a Civil 3D ® plugin that automates the creation of COGO points from polylines, 3D polylines, feature lines, alignments and corridors." />
+    <meta data-rh="true" property="og:type" content="article" />
+    <meta data-rh="true" property="og:title" content="TA Auto Points | Tarek Ahmed" />
+    <meta data-rh="true" property="og:description" content="TA Auto Points is a Civil 3D ® plugin that automates the creation of COGO points from polylines, 3D polylines, feature lines, alignments and corridors." />
     <meta
+      data-rh="true"
       property="og:image"
       content="https://me.tasolutionstech.com/images/og-cover.png"
     />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:image:alt" content="Tarek Ahmed, AEC Software Engineer" />
-    <meta name="twitter:card" content="summary_large_image" />
+    <meta data-rh="true" name="twitter:card" content="summary_large_image" />
     <meta
+      data-rh="true"
       name="twitter:image"
       content="https://me.tasolutionstech.com/images/og-cover.png"
     />
@@ -172,12 +180,12 @@
         100% { transform: translateX(350%); }
       }
     </style>
-    <script type="module" crossorigin src="/assets/index-CO-_06gI.js"></script>
+    <script type="module" crossorigin src="/assets/index-ByGYuUx-.js"></script>
     <link rel="modulepreload" crossorigin href="/assets/react-vendor-Bkizc3j1.js">
-    <link rel="stylesheet" crossorigin href="/assets/index-CT0zz6Hs.css">
-    <link rel="canonical" href="https://me.tasolutionstech.com/projects/ta-auto-points" />
-    <meta property="og:url" content="https://me.tasolutionstech.com/projects/ta-auto-points" />
-    <script type="application/ld+json">[{"@context":"https://schema.org","@type":"SoftwareApplication","name":"TA Auto Points","description":"TA Auto Points is a Civil 3D ® plugin that automates the creation of COGO points from polylines, 3D polylines, feature lines, alignments and corridors.","applicationCategory":"DesignApplication","operatingSystem":"Windows","downloadUrl":"https://apps.autodesk.com/CIV3D/en/Detail/Index?id=871177266319636625&appLang=en&os=Win64","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"author":{"@type":"Person","name":"Tarek Ahmed"}},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Projects","item":"https://me.tasolutionstech.com/projects"},{"@type":"ListItem","position":2,"name":"TA Auto Points","item":"https://me.tasolutionstech.com/projects/ta-auto-points"}]}]</script>
+    <link rel="stylesheet" crossorigin href="/assets/index-ChyrpvyI.css">
+    <link data-rh="true" rel="canonical" href="https://me.tasolutionstech.com/projects/ta-auto-points/" />
+    <meta data-rh="true" property="og:url" content="https://me.tasolutionstech.com/projects/ta-auto-points/" />
+    <script type="application/ld+json">[{"@context":"https://schema.org","@type":"SoftwareApplication","name":"TA Auto Points","description":"TA Auto Points is a Civil 3D ® plugin that automates the creation of COGO points from polylines, 3D polylines, feature lines, alignments and corridors.","applicationCategory":"DesignApplication","operatingSystem":"Windows","downloadUrl":"https://apps.autodesk.com/CIV3D/en/Detail/Index?id=871177266319636625&appLang=en&os=Win64","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"author":{"@type":"Person","name":"Tarek Ahmed"}},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Projects","item":"https://me.tasolutionstech.com/projects/"},{"@type":"ListItem","position":2,"name":"TA Auto Points","item":"https://me.tasolutionstech.com/projects/ta-auto-points/"}]}]</script>
   </head>
   <body>
     <div id="root">
@@ -185,6 +193,6 @@
         <div class="name">Tarek Ahmed</div>
         <div class="track"><div class="fill"></div></div>
       </div>
-    </div>
+    </div>
   </body>
 </html>
