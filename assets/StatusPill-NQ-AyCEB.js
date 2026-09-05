@@ -1,0 +1,1 @@
+import{j as e,b as n}from"./index-BiyJApaV.js";function a({children:s,className:t}){return e.jsxs("span",{className:n("inline-flex items-center gap-2 rounded-full border border-accent/25 bg-surface/80 px-3 py-1 text-xs font-medium text-accent backdrop-blur-md",t),children:[e.jsx("span",{className:"h-2 w-2 rounded-full bg-accent"}),s]})}export{a as S};
